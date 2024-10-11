@@ -11,6 +11,9 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        lato: ["Lato", "sans-serif"], // Add Lato to the fontFamily config
+      },
     },
   },
   plugins: [],
