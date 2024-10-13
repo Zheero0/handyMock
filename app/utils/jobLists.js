@@ -1,5 +1,6 @@
 export const jobListings = [
   {
+    id: 1,
     title: "Photographer needed",
     description:
       "I need someone to take photos of me and my friends for my birthday.",
@@ -10,6 +11,7 @@ export const jobListings = [
     postedBy: "Alice Johnson",
   },
   {
+    id: 2,
     title: "Nail tech by tomomorrow!!",
     description: "Looking for a nail technician for an event this weekend.",
     location: "London",
@@ -19,6 +21,7 @@ export const jobListings = [
     postedBy: "Emily Davis",
   },
   {
+    id: 3,
     title: "Dog walker for a week?",
     description: "Need a dog walker for my pug Rosie twice a week.",
     location: "Birmingham",
@@ -28,9 +31,10 @@ export const jobListings = [
     postedBy: "Jake Smith",
   },
   {
+    id: 4,
     title: "PT for wedding??",
     description:
-      "Looking for a certified personal trainer for weight loss coaching for my wedding later this year. ",
+      "Looking for a certified PT for weight loss coaching for my wedding later this year. ",
     location: "Leeds",
     rate: 40,
     imageUrl:
@@ -38,6 +42,7 @@ export const jobListings = [
     postedBy: "Sophia Brown",
   },
   {
+    id: 5,
     title: "Web developer for portfoli site",
     description: "Need a web developer to help build my portfolio site.",
     location: "Remote",
@@ -47,6 +52,7 @@ export const jobListings = [
     postedBy: "James Wilson",
   },
   {
+    id: 6,
     title: "Graphic designer for startup",
     description:
       "Seeking a designer to create logos and branding for my startup.",
@@ -57,6 +63,7 @@ export const jobListings = [
     postedBy: "Isabella Miller",
   },
   {
+    id: 7,
     title: "Gardener for elderly",
     description:
       "Looking for a gardener to help with landscaping the backyard.",
@@ -67,6 +74,7 @@ export const jobListings = [
     postedBy: "Michael Taylor",
   },
   {
+    id: 8,
     title: "House cleaner weekly",
     description:
       "Need a house cleaner for weekly visits to a 3-bedroom apartment.",
@@ -76,103 +84,103 @@ export const jobListings = [
       "https://images.pexels.com/photos/6197122/pexels-photo-6197122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Olivia Moore",
   },
-//   {
-//     title: "Tutor",
-//     description:
-//       "Math tutor needed for a high school student preparing for exams.",
-//     location: "Sheffield",
-//     rate: 25,
-//     imageUrl: "https://via.placeholder.com/400x300.png?text=Tutor",
-//     postedBy: "Lucas Martin",
-//   },
-//   {
-//     title: "Event DJ",
-//     description:
-//       "Looking for a DJ to play at a wedding event in late December.",
-//     location: "Manchester",
-//     rate: 100,
-//     imageUrl: "https://via.placeholder.com/400x300.png?text=Event+DJ",
-//     postedBy: "Mia Jackson",
-//   },
-//   {
-//     title: "Freelance Writer",
-//     description: "Need a writer for blog posts on technology and startups.",
-//     location: "Remote",
-//     rate: 35,
-//     imageUrl: "https://via.placeholder.com/400x300.png?text=Freelance+Writer",
-//     postedBy: "Benjamin White",
-//   },
-//   {
-//     title: "Chef",
-//     description: "Looking for a chef to cater a private dinner party.",
-//     location: "Bristol",
-//     rate: 150,
-//     imageUrl: "https://via.placeholder.com/400x300.png?text=Chef",
-//     postedBy: "Charlotte Lee",
-//   },
-//   {
-//     title: "Plumber",
-//     description: "Need a plumber to fix a leaking pipe in the bathroom.",
-//     location: "Newcastle",
-//     rate: 50,
-//     imageUrl: "https://via.placeholder.com/400x300.png?text=Plumber",
-//     postedBy: "William Harris",
-//   },
-//   {
-//     title: "Electrician",
-//     description: "Looking for an electrician to install lighting fixtures.",
-//     location: "London",
-//     rate: 55,
-//     imageUrl: "https://via.placeholder.com/400x300.png?text=Electrician",
-//     postedBy: "Evelyn Thompson",
-//   },
-//   {
-//     title: "Baby Sitter",
-//     description: "Looking for a babysitter for weekend evenings.",
-//     location: "Edinburgh",
-//     rate: 15,
-//     imageUrl: "https://via.placeholder.com/400x300.png?text=Baby+Sitter",
-//     postedBy: "Henry Clark",
-//   },
-//   {
-//     title: "Handyman",
-//     description:
-//       "Need a handyman to help with furniture assembly and home repairs.",
-//     location: "Cardiff",
-//     rate: 20,
-//     imageUrl: "https://via.placeholder.com/400x300.png?text=Handyman",
-//     postedBy: "Amelia King",
-//   },
-//   {
-//     title: "Makeup Artist",
-//     description: "Makeup artist needed for a fashion photoshoot.",
-//     location: "Leicester",
-//     rate: 65,
-//     imageUrl: "https://via.placeholder.com/400x300.png?text=Makeup+Artist",
-//     postedBy: "Harper Scott",
-//   },
-//   {
-//     title: "Delivery Driver",
-//     description: "Looking for a delivery driver for regular parcel drop-offs.",
-//     location: "Birmingham",
-//     rate: 18,
-//     imageUrl: "https://via.placeholder.com/400x300.png?text=Delivery+Driver",
-//     postedBy: "Daniel Green",
-//   },
-//   {
-//     title: "Carpenter",
-//     description: "Carpenter needed to build custom shelves and cabinets.",
-//     location: "Brighton",
-//     rate: 70,
-//     imageUrl: "https://via.placeholder.com/400x300.png?text=Carpenter",
-//     postedBy: "Sophia Adams",
-//   },
-//   {
-//     title: "Yoga Instructor",
-//     description: "Looking for a yoga instructor for weekly group classes.",
-//     location: "Oxford",
-//     rate: 40,
-//     imageUrl: "https://via.placeholder.com/400x300.png?text=Yoga+Instructor",
-//     postedBy: "Jack Roberts",
-//   },
+  //   {
+  //     title: "Tutor",
+  //     description:
+  //       "Math tutor needed for a high school student preparing for exams.",
+  //     location: "Sheffield",
+  //     rate: 25,
+  //     imageUrl: "https://via.placeholder.com/400x300.png?text=Tutor",
+  //     postedBy: "Lucas Martin",
+  //   },
+  //   {
+  //     title: "Event DJ",
+  //     description:
+  //       "Looking for a DJ to play at a wedding event in late December.",
+  //     location: "Manchester",
+  //     rate: 100,
+  //     imageUrl: "https://via.placeholder.com/400x300.png?text=Event+DJ",
+  //     postedBy: "Mia Jackson",
+  //   },
+  //   {
+  //     title: "Freelance Writer",
+  //     description: "Need a writer for blog posts on technology and startups.",
+  //     location: "Remote",
+  //     rate: 35,
+  //     imageUrl: "https://via.placeholder.com/400x300.png?text=Freelance+Writer",
+  //     postedBy: "Benjamin White",
+  //   },
+  //   {
+  //     title: "Chef",
+  //     description: "Looking for a chef to cater a private dinner party.",
+  //     location: "Bristol",
+  //     rate: 150,
+  //     imageUrl: "https://via.placeholder.com/400x300.png?text=Chef",
+  //     postedBy: "Charlotte Lee",
+  //   },
+  //   {
+  //     title: "Plumber",
+  //     description: "Need a plumber to fix a leaking pipe in the bathroom.",
+  //     location: "Newcastle",
+  //     rate: 50,
+  //     imageUrl: "https://via.placeholder.com/400x300.png?text=Plumber",
+  //     postedBy: "William Harris",
+  //   },
+  //   {
+  //     title: "Electrician",
+  //     description: "Looking for an electrician to install lighting fixtures.",
+  //     location: "London",
+  //     rate: 55,
+  //     imageUrl: "https://via.placeholder.com/400x300.png?text=Electrician",
+  //     postedBy: "Evelyn Thompson",
+  //   },
+  //   {
+  //     title: "Baby Sitter",
+  //     description: "Looking for a babysitter for weekend evenings.",
+  //     location: "Edinburgh",
+  //     rate: 15,
+  //     imageUrl: "https://via.placeholder.com/400x300.png?text=Baby+Sitter",
+  //     postedBy: "Henry Clark",
+  //   },
+  //   {
+  //     title: "Handyman",
+  //     description:
+  //       "Need a handyman to help with furniture assembly and home repairs.",
+  //     location: "Cardiff",
+  //     rate: 20,
+  //     imageUrl: "https://via.placeholder.com/400x300.png?text=Handyman",
+  //     postedBy: "Amelia King",
+  //   },
+  //   {
+  //     title: "Makeup Artist",
+  //     description: "Makeup artist needed for a fashion photoshoot.",
+  //     location: "Leicester",
+  //     rate: 65,
+  //     imageUrl: "https://via.placeholder.com/400x300.png?text=Makeup+Artist",
+  //     postedBy: "Harper Scott",
+  //   },
+  //   {
+  //     title: "Delivery Driver",
+  //     description: "Looking for a delivery driver for regular parcel drop-offs.",
+  //     location: "Birmingham",
+  //     rate: 18,
+  //     imageUrl: "https://via.placeholder.com/400x300.png?text=Delivery+Driver",
+  //     postedBy: "Daniel Green",
+  //   },
+  //   {
+  //     title: "Carpenter",
+  //     description: "Carpenter needed to build custom shelves and cabinets.",
+  //     location: "Brighton",
+  //     rate: 70,
+  //     imageUrl: "https://via.placeholder.com/400x300.png?text=Carpenter",
+  //     postedBy: "Sophia Adams",
+  //   },
+  //   {
+  //     title: "Yoga Instructor",
+  //     description: "Looking for a yoga instructor for weekly group classes.",
+  //     location: "Oxford",
+  //     rate: 40,
+  //     imageUrl: "https://via.placeholder.com/400x300.png?text=Yoga+Instructor",
+  //     postedBy: "Jack Roberts",
+  //   },
 ];

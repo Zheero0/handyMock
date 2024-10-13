@@ -2,7 +2,7 @@
 import React from 'react'
 import { useAuth } from '../authContext'
 import Login from './Login';
-import ChatComponent from './Chat';
+import Chat from './Chat';
 
 export default function ChatAuth() {
     const { isAuthenticated } = useAuth();
@@ -12,7 +12,7 @@ export default function ChatAuth() {
     )
 
     if (isAuthenticated) {
-        children = <ChatComponent/>
+        children = <Chat/>
      }
     
 

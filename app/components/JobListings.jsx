@@ -202,7 +202,11 @@ export default function JobListings() {
                       {"£" + selectedJob.rate}
                     </span>
                   </p>
-                                  <Button url={ "/chat"} text={"Contact" + " " + selectedJob.postedBy} dark />
+                  <Button
+                    url={`/chat/${selectedJob.id}`}
+                    text={`Contact ${selectedJob.postedBy}`}
+                    dark
+                  />
                 </div>
 
                 {/* Bottom half: Map placeholder */}
