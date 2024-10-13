@@ -1,6 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
+import { AuthProvider } from "./authContext";
+import Navbar from "./components/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,18 +20,7 @@ export const metadata = {
   description: "Connecting Odd Jobs and Skilled Proffesionals",
 };
 
-const header = (
-  <header className="p-4 sm:p-8 flex items-center justify-between gap-4">
-    <Link href={"/"}>
-      <h1
-        className={"text-base sm:text-lg textGradient " + geistSans.className}
-      >
-        Handy
-      </h1>
-    </Link>
-    <Link href={"/dashboard"}>Dashboard</Link>
-  </header>
-);
+
 
 const footer = (
   <footer className="p-4 sm:p-8 grid place-items-center">
@@ -49,9 +40,12 @@ export default function RootLayout({ children }) {
             geistMono.className
           }
         >
-          {header}
+          <AuthProvider>
+          <Navbar/>
           {children}
           {footer}
+          </AuthProvider>
+
         </body>
 
     </html>

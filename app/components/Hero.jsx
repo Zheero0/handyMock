@@ -8,6 +8,7 @@ import "@fontsource/lato"; // Defaults to weight 400
 import "@fontsource/lato/700.css"; // For bold
 import { FaSearch } from "react-icons/fa";
 import { jobListings } from "../utils/jobLists";
+import ToggleAuth from "./ToggleAuth";
 
 
 export default function Hero() {
@@ -36,7 +37,7 @@ export default function Hero() {
           Find Skilled Professionals for Every Task
         </h1>
         <h3 className="text-[1rem] sm:text-lg tracking-[1px] font-lato font-normal md:text-xl text-center max-w-[400px] sm:max-w-[500px] md:max-w-[700px]">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+          Empowering Connections - Freedom to Earn
         </h3>
       </div>
 
@@ -121,7 +122,7 @@ export default function Hero() {
           />
         </>
       ) : (
-        <PostJobForm />
+        <ToggleAuth/>
       )}
     </div>
   );

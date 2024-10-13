@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Button from "./Button";
 import { CiBookmark } from "react-icons/ci";
 import { jobListings } from "../utils/jobLists";
+import MapComponent from "./MapComponent"; 
 
 
 export default function JobListings() {
@@ -101,7 +102,7 @@ export default function JobListings() {
                 onClick={() => {
                   openModal(index);
                 }}
-                className="absolute top-[-300px] right-[-12px]  p-2 w-[100px] h-[50px] bg-blue-600 flex items-center justify-center rounded-xl duration-200 hover:scale-110 hover:cursor-pointer"
+                className="absolute shadow-lg top-[-320px] right-[-12px]  p-2 w-[100px] h-[50px] bg-blue-600 flex items-center justify-center rounded-xl duration-200 hover:scale-110 hover:cursor-pointer"
               >
                 <span className="text-white text-2xl font-extrabold tracking-[0.7px]">
                   {"£" + job.rate}
@@ -159,7 +160,7 @@ export default function JobListings() {
             </button>
 
             {/* Modal content */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Left column: Image */}
               <div className="h-[450px] relative">
                 {" "}
@@ -167,7 +168,7 @@ export default function JobListings() {
                 <img
                   src={selectedJob.imageUrl}
                   alt={selectedJob.title}
-                  className="w-full h-full object-cover" // Adjusted class for proper aspect ratio
+                  className="w-full h-full object-cover rounded-xl" // Adjusted class for proper aspect ratio
                 />
               </div>
 
@@ -175,10 +176,18 @@ export default function JobListings() {
               <div className="flex flex-col ">
                 {/* Top half: Job details */}
                 <div className=" flex-1 flex-col justify-between">
-                  <h2 className="text-2xl font-bold mb-2">
-                    {selectedJob.title}
-                  </h2>
+                  <h2 className="text-2xl font-bold ">{selectedJob.title}</h2>
+                  <p className=" leading-[1.1rem] mb-2 md:text-sm sm:text-md ">
+                    Listed by:{" "}
+                    <span className=" underline hover:cursor-pointer">
+                      {selectedJob.postedBy}
+                    </span>
+                  </p>
                   <p className=" leading-[1.1rem] mb-1">
+                    <span className="font-extrabold mb-2">
+                      Job Description:
+                    </span>
+                    <br />
                     {selectedJob.description}
                   </p>
                   <p>
@@ -193,12 +202,12 @@ export default function JobListings() {
                       {"£" + selectedJob.rate}
                     </span>
                   </p>
-                  <Button text="Apply Now" dark />
+                                  <Button url={ "/chat"} text={"Contact" + " " + selectedJob.postedBy} dark />
                 </div>
 
                 {/* Bottom half: Map placeholder */}
-                <div className="flex-1 h-60 bg-gray-200 rounded-lg flex items-center justify-center">
-                  <p className="text-gray-500">Map Placeholder</p>
+                <div className="flex-1 h-60 bg-gray-200 rounded-lg mt-3">
+                  <MapComponent location={selectedJob.location} />
                 </div>
               </div>
             </div>
@@ -237,4 +246,3 @@ export default function JobListings() {
     </div>
   );
 }
-
