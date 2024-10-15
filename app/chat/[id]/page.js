@@ -88,7 +88,9 @@ if (isAuthenticated) {
             <Image
               src={conversation.imageUrl}
               alt="User Profile"
-              className="h-[100px] w-[100px] rounded-full border-2 object-cover mt-4 "
+              width={100}
+              height={100}
+              className="h-[100px] w-[100px] rounded-full shadow-xl border-2 object-cover mt-4 "
             />
           </div>
 
