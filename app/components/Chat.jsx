@@ -26,12 +26,12 @@ export default function Chat() {
         
          <h1 className="text-2xl mb-4 font-bold text-blue-600">Conversations</h1>
       <ul className=" p-2">
-        {conversations.map((conversation) => {
+        {conversations.map((conversation, index) => {
           const lastMessage =
             conversation.messages[conversation.messages.length - 1];
 
           return (
-            <div key={conversation.id} className="grid grid-cols[auto_3fr]">
+            <div key={index} className="grid grid-cols[auto_3fr]">
               <li className="mb-2 py-1 px-2 border-t-2 border-blue-600 bg-blue-100 duration-200 hover:scale-105">
                 <Link href={`/chat/${conversation.id}`} className="p-0 m-0">
                   <h3 className="font-bold text-xl py-2 pt-1 text-blue-600">
