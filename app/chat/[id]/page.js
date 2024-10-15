@@ -11,6 +11,7 @@ import { FiArrowLeft } from "react-icons/fi";
 import MapComponent from "../../components/MapComponent";
 import { useAuth } from "@/app/authContext";
 import Login from "../../components/Login";
+import Image from "next/image";
 
 
 
@@ -84,7 +85,7 @@ if (isAuthenticated) {
               </span>
             </div>
 
-            <img
+            <Image
               src={conversation.imageUrl}
               alt="User Profile"
               className="h-[100px] w-[100px] rounded-full border-2 object-cover mt-4 "

@@ -31,11 +31,8 @@ export default function Chat() {
             conversation.messages[conversation.messages.length - 1];
 
           return (
-            <div className="grid grid-cols[auto-3fr]">
-              <li
-                key={conversation.id}
-                className="mb-2 py-1 px-2 border-t-2 border-blue-600 bg-blue-100 duration-200 hover:scale-105"
-              >
+            <div key={conversation.id} className="grid grid-cols[auto_3fr]">
+              <li className="mb-2 py-1 px-2 border-t-2 border-blue-600 bg-blue-100 duration-200 hover:scale-105">
                 <Link href={`/chat/${conversation.id}`} className="p-0 m-0">
                   <h3 className="font-bold text-xl py-2 pt-1 text-blue-600">
                     {conversation.participants[1]}
