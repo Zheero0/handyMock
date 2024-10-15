@@ -6,7 +6,7 @@ const ChatBubble = ({ text, sender }) => {
       } mb-2`}
     >
       <div
-        className={`relative max-w-xs p-3  rounded-lg ${
+        className={`relative max-w-xs p-3 font-bold rounded-lg  ${
           sender === "me"
             ? "bg-blue-500 text-white shadow-xl shadow-blue-300"
             : "bg-gray-200 text-gray-800 shadow-xl shadow-gray-300"

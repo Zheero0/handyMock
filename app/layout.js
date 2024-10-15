@@ -23,9 +23,9 @@ export const metadata = {
 
 
 const footer = (
-  <footer className="p-4 sm:p-8 grid place-items-center">
-    <div>
-      footer
+  <footer className="p-4 sm:p-8 flex justify-center mx-auto place-items-center items-center ">
+    <div className="Flex flex-col  justify-center mx-auto w-full max-w-screen-xl place-content-center">
+      &copy; {new Date().getFullYear()} handy All rights reserved.
     </div>
   </footer>
 );

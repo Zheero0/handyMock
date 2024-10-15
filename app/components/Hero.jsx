@@ -64,8 +64,19 @@ export default function Hero() {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full px-4 py-2 rounded-full text-black bg-transparent focus:outline-none"
               />
-            </div>
+            </div>{" "}
+            {/* Postcode Input */}
+            <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
+              <label className="text-xs font-semibold ml-5 text-gray-600">
+                Address
+              </label>
+              <input
+                type="text"
+                placeholder="Search Area"
 
+                className="w-full px-4 py-2 rounded-full text-black bg-transparent focus:outline-none"
+              />
+            </div>
             {/* Location Dropdown */}
             <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
               <label className="text-xs font-semibold text-gray-600 ml-5">
@@ -85,7 +96,24 @@ export default function Hero() {
                 <option value="glasgow">Glasgow</option>
               </select>
             </div>
+            {/* Location Dropdown */}
+            <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
+              <label className="text-xs font-semibold text-gray-600 ml-5">
+                Radius
+              </label>
+              <select
 
+
+                className="w-full px-4 py-2 rounded-full bg-transparent focus:outline-none"
+              >
+                <option>0 Miles</option>
+                <option>0-2 Miles</option>
+                <option>2-5 Miles</option>
+                <option>5-10 Miles</option>
+                <option>10-15 Miles</option>
+                <option>15-20 Miles</option>
+              </select>
+            </div>
             {/* Rate Dropdown */}
             <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
               <label className="text-xs font-semibold ml-4 text-gray-600">
@@ -97,14 +125,13 @@ export default function Hero() {
                 className="w-full px-4 py-2 rounded-full bg-transparent focus:outline-none"
               >
                 <option value="">Any</option>
-                <option value="10">£10</option>
-                <option value="20">£20</option>
-                <option value="50">£50</option>
-                <option value="100">£100</option>
-                <option value="200">£200+</option>
+                <option value="10">£0-50</option>
+                <option value="20">£50-100</option>
+                <option value="50">£100-200</option>
+                <option value="100">£200-500</option>
+                <option value="200">£500+</option>
               </select>
             </div>
-
             {/* Search Button */}
             <div className="relative">
               <button className="p-2 md:p-5 bg-blue-600 rounded-full text-white font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -122,7 +149,7 @@ export default function Hero() {
           />
         </>
       ) : (
-        <ToggleAuth/>
+        <ToggleAuth />
       )}
     </div>
   );

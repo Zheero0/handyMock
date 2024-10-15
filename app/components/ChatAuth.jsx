@@ -19,6 +19,6 @@ export default function ChatAuth() {
 
     return (
     
-      <div className='flex flex-col  items-center place-content-center my-auto'>{ children}</div>
+      <div className='flex flex-col  place-content-center my-auto px-0'>{ children}</div>
   )
 }

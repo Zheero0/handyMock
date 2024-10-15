@@ -2,26 +2,39 @@ import React from "react";
 import { FiUser, FiEdit } from "react-icons/fi";
 import { AiFillStar } from "react-icons/ai";
 
+   export const fakeUser = {
+     name: "Jessica Carrington",
+     location: "London",
+     email: "johndoe@example.com",
+     bio: "Enthusiastic Next.js and React developer with over 5 years of experience building dynamic web applications. Proficient in Tailwind CSS for responsive designs and Node.js for effective server-side functionality. Committed to creating high-quality, user-focused solutions and continuously exploring new technologies in the evolving web development landscape.",
+     skills: ["React", "Next.js", "TailwindCSS"],
+     reviews: 4,
+     profileImage:
+       "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Place your image here
+     bgImage:
+       "https://codingweek.org/wp-content/uploads/2023/09/chris-ried-ieic5Tq8YMk-unsplash-2048x1367.jpg",
+   };
+
 export default function Dashboard() {
-  const fakeUser = {
-    name: "Jessica Carrington",
-    location: "London, UK",
-    email: "johndoe@example.com",
-    bio: "Enthusiastic Next.js and React developer with over 5 years of experience building dynamic web applications. Proficient in Tailwind CSS for responsive designs and Node.js for effective server-side functionality. Committed to creating high-quality, user-focused solutions and continuously exploring new technologies in the evolving web development landscape.",
-    skills: ["React", "Next.js", "TailwindCSS"],
-    reviews: 4,
-    profileImage:
-      "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Place your image here
-    bgImage:
-      "https://codingweek.org/wp-content/uploads/2023/09/chris-ried-ieic5Tq8YMk-unsplash-2048x1367.jpg",
-  };
+    const fakeUser = {
+     name: "Jessica Carrington",
+     location: "London, UK",
+     email: "johndoe@example.com",
+     bio: "Enthusiastic Next.js and React developer with over 5 years of experience building dynamic web applications. Proficient in Tailwind CSS for responsive designs and Node.js for effective server-side functionality. Committed to creating high-quality, user-focused solutions and continuously exploring new technologies in the evolving web development landscape.",
+     skills: ["React", "Next.js", "TailwindCSS"],
+     reviews: 4,
+     profileImage:
+       "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", // Place your image here
+     bgImage:
+       "https://codingweek.org/wp-content/uploads/2023/09/chris-ried-ieic5Tq8YMk-unsplash-2048x1367.jpg",
+   };
   return (
     <div className="grid grid-cols-[auto_1fr] gap-[150px]">
       {/* Profile Section */}
       <div className="max-w-md bg-white rounded-2xl rounded-t-full ml-[100px]">
         {/* Profile Image */}
         <div
-          className="flex justify-center items-center bg-blue-600 h-[350px] rounded-t-full relative"
+          className="flex justify-center items-center bg-blue-600 h-[350px] rounded-t-[5rem] relative"
           style={{
             backgroundImage: `url(${fakeUser.bgImage})`,
             backgroundSize: "cover",
@@ -30,7 +43,7 @@ export default function Dashboard() {
         >
           {/* Banner */}
           <div className="absolute top-[70px] left-[300px] transform -translate-x-1/2 bg-blue-100 px-3 py-1 rounded-full">
-            <span className="text-blue-600 font-semibold">handy PRO</span>
+            <span className="text-blue-600 font-extrabold tracking-[.2rem]">PRO</span>
           </div>
 
           <img
@@ -82,7 +95,9 @@ export default function Dashboard() {
 
       {/* Gray Background Section */}
       <div className="h-full rounded-2xl p-8 pt-0 ">
-        <h2 className="text-2xl font-bold mb-4 ">Pro Dashboard</h2>
+        <h2 className="text-2xl font-bold mb-4 text-blue-600">
+          Pro Dashboard
+        </h2>
 
         {/* Active Job Applications */}
         <div className="mb-6">

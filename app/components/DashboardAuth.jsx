@@ -16,7 +16,7 @@ export default function DashboardAuth() {
     }
     
   return (
-    <div className="">
+    <div className="flex flex-col my-auto">
   {children}
     </div>
   );
