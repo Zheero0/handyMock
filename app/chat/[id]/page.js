@@ -113,7 +113,7 @@ if (isAuthenticated) {
             </h4>
             <div className="flex items-center  ">
               <span className="mr-[3px] text-blue-600 font-semibold text-sm">
-                18
+                {conversation.reviews}
               </span>
               {/* Render star icons based on the reviews value */}
               {[...Array(fakeUser.reviews)].map((_, index) => (
