@@ -125,7 +125,7 @@ export default function JobListings() {
               </p>
               <p className="font-bold">
                 Rate:{" "}
-                <span className="text-blue-500">{"£" + job.rate + "/hr"}</span>
+                <span className="text-blue-500">{"£" + job.rate}</span>
               </p>
               <button
                 onClick={() => openModal(index)}
