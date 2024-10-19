@@ -12,22 +12,23 @@ import MapComponent from "../../components/MapComponent";
 import { useAuth } from "@/app/authContext";
 import Login from "../../components/Login";
 import Image from "next/image";
+import MustBePro from "@/app/components/MustBePro";
 
 
 
 export default function ChatDetailPage() {
-  const { isAuthenticated } = useAuth();
+  const { isAuthenticated, isPro } = useAuth();
   const { id } = useParams(); // Get the chat ID from the URL
   const router = useRouter();
   // Find the conversation by ID
   const conversation = conversations.find((conv) => conv.id === parseInt(id));
 let children = (
 
-    <Login />
+    <MustBePro/>
 
 );
 
-if (isAuthenticated) {
+if (isPro ) {
   children = (
     <div className=" grid grid-cols-[auto_2fr_1fr] gap-10 px-10">
       <div>
@@ -137,7 +138,7 @@ if (isAuthenticated) {
 }
 
   if (!conversation) {
-    return <div>Conversation not found.</div>;
+    return <div> No conversation Found</div>
   }
 
   return <div className="flex-1 flex flex-col items-center ">{children}</div>;

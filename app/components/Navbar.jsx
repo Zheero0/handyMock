@@ -9,7 +9,7 @@ import { HiOutlineChat } from "react-icons/hi";
 import { HiOutlineLogout } from "react-icons/hi";
 import Image from "next/image";
 import { FiUser } from "react-icons/fi";
-
+import { MdMenuBook } from "react-icons/md";
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -17,7 +17,7 @@ const geistSans = localFont({
 });
 
 const Navbar = () => {
-  const { isAuthenticated, logout, login } = useAuth();
+  const { isAuthenticated, logout, login, isPro } = useAuth();
 
   return (
     <header className="p-4 sm:p-8 flex items-center justify-between gap-4">
@@ -31,13 +31,25 @@ const Navbar = () => {
           {" "}
           <HiOutlineChat size={40} className="text-blue-600" />
         </Link>
-        <Link href={"/dashboard"}>
-          <FiUser size={40} className="text-blue-600" />
+        <Link href={"/pro"}>
+          {" "}
+          <MdMenuBook size={40} className="text-blue-600" />
         </Link>
-        <button onClick={logout}>
+
+        { isPro ? 
+          <Link href={"/dashboard"}>
+            <FiUser size={40} className="text-blue-600" /> 
+          </Link> : 
+          " "
+        }
+
+        {/* <Link href={"/dashboard"}>
+          {isPro ? <FiUser size={40} className="text-blue-600" /> : " "}
+        </Link> */}
+         {isAuthenticated ?  <button onClick={logout}>
           {" "}
           <HiOutlineLogout size={40} className="text-blue-600" />
-        </button>
+        </button> : " "}
       </div>
     </header>
   );

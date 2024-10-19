@@ -3,15 +3,16 @@ import React from 'react'
 import { useAuth } from '../authContext'
 import Login from './Login';
 import Chat from './Chat';
+import MustBePro from './MustBePro';
 
 export default function ChatAuth() {
-    const { isAuthenticated } = useAuth();
+    const { isAuthenticated, isPro } = useAuth();
 
     let children = (
-        <Login />
+        <MustBePro/>
     )
 
-    if (isAuthenticated) {
+    if (isPro) {
         children = <Chat/>
      }
     

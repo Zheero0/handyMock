@@ -1,6 +1,7 @@
 import React from "react";
 import { FiUser, FiEdit } from "react-icons/fi";
 import { AiFillStar } from "react-icons/ai";
+import { FaCrown } from "react-icons/fa";
 
    export const fakeUser = {
      name: "Jessica Carrington",
@@ -42,8 +43,8 @@ export default function Dashboard() {
           }}
         >
           {/* Banner */}
-          <div className="absolute top-[70px] left-[300px] transform -translate-x-1/2 bg-blue-100 px-3 py-1 rounded-full">
-            <span className="text-blue-600 font-extrabold tracking-[.2rem]">PRO</span>
+          <div className="absolute top-[60px] left-[300px] transform -translate-x-1/2 bg-blue-100 p-3  rounded-full">
+            <span className="text-blue-600 font-extrabold tracking-[.2rem]"><FaCrown size={35}/></span>
           </div>
 
           <img

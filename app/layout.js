@@ -15,6 +15,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+
 export const metadata = {
   title: "Handy",
   description: "Connecting Odd Jobs and Skilled Proffesionals",
@@ -36,8 +37,8 @@ export default function RootLayout({ children }) {
 
         <body
           className={
-            "w-full max-w-[100vw] mx-auto text-sm sm:text-base min-h-screen flex flex-col " +
-            geistMono.className
+            "w-full max-w-[100vw] mx-auto text-sm sm:text-base font-lato min-h-screen flex flex-col " 
+     
           }
         >
           <AuthProvider>
