@@ -145,7 +145,7 @@ export default function JobListings() {
           className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
           onClick={handleOverlayClick}
         >
-          <div className="bg-white p-9  rounded-[1rem] shadow-lg w-11/12 md:w-2/4 lg:w-2/4 relative z-99">
+          <div className="bg-white p-9  rounded-[1rem] shadow-lg w-11/12 md:w-3/4 lg:w-3/4 relative z-99">
             {/* Arrow buttons */}
             <button
               className="absolute left-[-30px] md:left-[-50px] top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full"

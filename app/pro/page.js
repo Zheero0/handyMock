@@ -4,7 +4,7 @@ import ProAuth from "../components/ProAuth"
 
 
 export const metadata = {
-  title: "Marketplace ⋅ Pro Merchants",
+  title: "Handy ⋅ Pro",
 };
 
 export default function ProPage() {

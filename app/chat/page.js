@@ -4,7 +4,7 @@ import Main from "../components/Main";
 import ChatAuth from "../components/ChatAuth";
 
 export const metadata = {
-  title: "Marketplace ⋅ Chat",
+  title: "handy ⋅ Chat",
 };
 
 export default function ChatPage() {

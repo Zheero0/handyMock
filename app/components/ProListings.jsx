@@ -99,8 +99,6 @@ export default function ProListings() {
           <input
             type="text"
             placeholder="Search Jobs"
-           
-            
             className="w-full px-4 py-2 rounded-full text-black bg-transparent focus:outline-none"
           />
         </div>{" "}
@@ -134,11 +132,7 @@ export default function ProListings() {
           <label className="text-xs font-semibold text-gray-600 ml-5">
             Location
           </label>
-          <select
-            
-            
-            className="w-full px-4 py-2 rounded-full bg-transparent focus:outline-none"
-          >
+          <select className="w-full px-4 py-2 rounded-full bg-transparent focus:outline-none">
             <option value="">Any (UK)</option>
             <option value="london">London</option>
             <option value="manchester">Manchester</option>
@@ -153,11 +147,7 @@ export default function ProListings() {
           <label className="text-xs font-semibold ml-4 text-gray-600">
             Rate
           </label>
-          <select
-            
-        
-            className="w-full px-4 py-2 rounded-full bg-transparent focus:outline-none"
-          >
+          <select className="w-full px-4 py-2 rounded-full bg-transparent focus:outline-none">
             <option value="">Any</option>
             <option value="10">£0-50</option>
             <option value="20">£50-100</option>
@@ -206,7 +196,12 @@ export default function ProListings() {
               <div className="flex justify-between m-0">
                 {" "}
                 {/* Adjust padding-top for content */}
-                <h3 className="pt-1 md:text-md font-semibold">{job.title}</h3>
+                <div>
+                  <h3 className="pt-1 mb-0 md:text-md font-semibold">
+                    {job.name}
+                  </h3>
+                  <p className="text-sm font-medium mb-2">{job.title}</p>
+                </div>
                 <button className="cursor-pointer transition-transform duration-300 transform hover:scale-125 p-[0.2rem] pb-[0.3rem] pt-[0.5rem] pr-0">
                   <CiBookmark className="w-5 h-5 text-gray-400" />
                 </button>
@@ -234,10 +229,10 @@ export default function ProListings() {
       {selectedJob && (
         <div
           id="overlay"
-          className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 "
           onClick={handleOverlayClick}
         >
-          <div className="bg-white p-9  rounded-[1rem] shadow-lg w-11/12 md:w-2/4 lg:w-2/4 relative z-99">
+          <div className="bg-white p-9  rounded-[1rem] shadow-lg w-11/12 md:w-3/4 lg:w-3/4 relative z-99">
             {/* Arrow buttons */}
             <button
               className="absolute left-[-30px] md:left-[-50px] top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full"
@@ -273,13 +268,11 @@ export default function ProListings() {
                   <p className=" leading-[1.1rem] mb-2 md:text-sm sm:text-md ">
                     Listed by:{" "}
                     <span className=" underline hover:cursor-pointer">
-                      {selectedJob.postedBy}
+                      {selectedJob.name}
                     </span>
                   </p>
                   <p className=" leading-[1.1rem] mb-1">
-                    <span className="font-extrabold mb-2">
-                      Job Description:
-                    </span>
+                    <span className="font-extrabold mb-2">Description:</span>
                     <br />
                     {selectedJob.description}
                   </p>
@@ -295,11 +288,17 @@ export default function ProListings() {
                       {"£" + selectedJob.rate}
                     </span>
                   </p>
-                  <Button
-                    url={`/chat/${selectedJob.id}`}
-                    text={`Contact ${selectedJob.postedBy}`}
-                    dark
-                  />
+                  <ul className="flex flex-wrap gap-2 my-3 ">
+                    {selectedJob.services.map((skill, index) => (
+                      <li
+                        key={index}
+                        className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full"
+                      >
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                  <Button text={`Contact ${selectedJob.name}`} dark />
                 </div>
 
                 {/* Bottom half: Map placeholder */}
