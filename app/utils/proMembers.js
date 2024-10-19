@@ -43,7 +43,8 @@ export const proMembersList = [
       "Experienced web developer specializing in e-commerce and business websites.",
     location: "Remote",
     rate: 85,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Web+Developer",
+    imageUrl:
+      "https://www.wmpeople.co.uk/wp-content/uploads/2023/05/Website-Post-Template.jpg",
     services: ["Website development", "E-commerce", "SEO optimization"],
   },
   {
@@ -53,7 +54,8 @@ export const proMembersList = [
       "Bringing your ideas to life through dynamic 2D and 3D animations.",
     location: "Remote",
     rate: 150,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Animation+Artist",
+    imageUrl:
+      "https://www.rmcad.edu/wp-content/uploads/2024/04/shutterstock_434383288.jpg",
     services: ["Explainer videos", "2D/3D animation", "Marketing animations"],
   },
   {
@@ -63,7 +65,8 @@ export const proMembersList = [
       "Certified electrician for home rewiring, installations, and repairs.",
     location: "Birmingham",
     rate: 70,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Electrician",
+    imageUrl:
+      "https://firstcallelectricians.uk/wp-content/uploads/2023/09/Electrician-St-Albans-1.jpeg",
     services: ["Home rewiring", "Lighting installation", "Electrical repairs"],
   },
   {
@@ -73,7 +76,8 @@ export const proMembersList = [
       "Freelance videographer creating high-quality videos for businesses.",
     location: "London",
     rate: 200,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Videographer",
+    imageUrl:
+      "https://images.airtasker.com/v7/https://airtasker-seo-assets-prod.s3.amazonaws.com/en_AU/1629890716963_vidography-hero-min.jpg?w=2656&func=bound&org_if_sml=1",
     services: ["Promotional videos", "Event coverage", "Interviews"],
   },
   {
@@ -83,7 +87,8 @@ export const proMembersList = [
       "Experienced roofer specializing in repairs and new installations.",
     location: "Liverpool",
     rate: 90,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Roofing+Contractor",
+    imageUrl:
+      "https://www.aaarfg.com/wp-content/uploads/2021/11/questions-for-a-commercial-roofing-contractor.jpg",
     services: ["Roof repairs", "Gutter cleaning", "New installations"],
   },
   {
@@ -93,7 +98,8 @@ export const proMembersList = [
       "Creative graphic designer offering branding and print services.",
     location: "Remote",
     rate: 70,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Graphic+Designer",
+    imageUrl:
+      "https://www.abulegraphics.com/assets/media/components/b-main-slider/web-design-abuja-designer-agency-lagos-nigeria-digital-marketing-marketer-graphics-design-company.webp",
     services: ["Brand identity", "Logo design", "Print media"],
   },
   {
@@ -103,7 +109,8 @@ export const proMembersList = [
       "Professional tiling services for kitchens, bathrooms, and floors.",
     location: "Leicester",
     rate: 55,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Tiling+Specialist",
+    imageUrl:
+      "https://www.rubi.com/en/blog/wp-content/uploads/2021/03/alicatar-una-pared.jpg",
     services: ["Bathroom tiling", "Flooring", "Kitchen backsplashes"],
   },
   {
@@ -113,7 +120,8 @@ export const proMembersList = [
       "Interior design expert specializing in home renovations and decor.",
     location: "Bristol",
     rate: 140,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Interior+Designer",
+    imageUrl:
+      "https://www.fairfield.edu/news/images/insight/914336614_grad_cas_grad-prog_interior-design_careers-worth-considering_600x370_07012022.jpg",
     services: ["Home decor", "Office spaces", "Renovations"],
   },
   {
@@ -124,7 +132,7 @@ export const proMembersList = [
     location: "Remote",
     rate: 80,
     imageUrl:
-      "https://via.placeholder.com/400x300.png?text=Social+Media+Manager",
+      "https://images.ctfassets.net/cpumif18y1gd/4lswR4QQwwXyOrZ1sCcLpU/eb59409ea03a832082576110d3527965/How_to_be_a_Social_Media_Manager_625x417.png?fm=webp&q=100",
     services: [
       "Social media campaigns",
       "Content creation",
@@ -137,7 +145,8 @@ export const proMembersList = [
     description: "SEO expert improving search rankings and online visibility.",
     location: "Remote",
     rate: 95,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=SEO+Specialist",
+    imageUrl:
+      "https://www.syte.co.za/wp-content/uploads/2024/04/seo_expert_banner.jpg",
     services: ["SEO audits", "Keyword research", "On-page SEO"],
   },
   {
@@ -147,7 +156,7 @@ export const proMembersList = [
     location: "Remote",
     rate: 120,
     imageUrl:
-      "https://via.placeholder.com/400x300.png?text=Mobile+App+Developer",
+      "https://media.licdn.com/dms/image/v2/D4D12AQGkhVu2gh8X6g/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1716287814954?e=2147483647&v=beta&t=GJ4uqwE33b3I-0-JlW3LEN8M0BjVxqEbDJx_l4mWIsw",
     services: ["App development", "UI/UX design", "App maintenance"],
   },
   {
@@ -157,7 +166,8 @@ export const proMembersList = [
       "UX/UI specialist creating user-centered designs for websites and apps.",
     location: "Remote",
     rate: 90,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=UX+UI+Designer",
+    imageUrl:
+      "https://www.simplilearn.com/ice9/free_resources_article_thumb/how_to_become_a_UI_UX_Designer.jpg",
     services: ["Website redesign", "Mobile app design", "User experience"],
   },
   {
@@ -167,7 +177,8 @@ export const proMembersList = [
       "Roofing expert offering reliable services for repair and maintenance.",
     location: "Glasgow",
     rate: 80,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Roofing+Specialist",
+    imageUrl:
+      "https://thearchitectsdiary.com/wp-content/uploads/2021/03/5-Reasons-You-May-Need-To-Hire-A-Metal-Roofing-Contractor-1-1024x683.jpeg",
     services: ["Roof maintenance", "Leak repairs", "Flat roofs"],
   },
   {
@@ -177,7 +188,8 @@ export const proMembersList = [
       "3D animation expert creating custom animations for marketing and media.",
     location: "Remote",
     rate: 200,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=3D+Animator",
+    imageUrl:
+      "https://static.wixstatic.com/media/437529_f0bc377776c34ce2850f59e313103a58~mv2.jpeg/v1/fill/w_888,h_500,al_c,lg_1,q_85,enc_auto/437529_f0bc377776c34ce2850f59e313103a58~mv2.jpeg",
     services: ["3D animation", "Motion graphics", "Explainer videos"],
   },
   {
@@ -187,7 +199,8 @@ export const proMembersList = [
       "Copywriter providing engaging product descriptions and marketing copy.",
     location: "Remote",
     rate: 50,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Copywriter",
+    imageUrl:
+      "https://assets.entrepreneur.com/content/3x2/2000/1601904712-GettyImages-889461006.jpg?format=pjeg&auto=webp&crop=16:9&width=675&height=380",
     services: ["Product copywriting", "Blog writing", "SEO content"],
   },
   {
@@ -197,7 +210,22 @@ export const proMembersList = [
       "Skilled handyman available for home repairs, installations, and maintenance.",
     location: "Newcastle",
     rate: 45,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Handyman",
+    imageUrl: "https://theshs.co.uk/files/images/handyman.webp",
     services: ["Home repairs", "Furniture assembly", "Painting"],
+  },
+  {
+    name: "Bright Minds Tutoring",
+    title: "Maths Tutor",
+    description:
+      "Experienced maths tutor available for students of all levels, specializing in exam preparation and foundational skills.",
+    location: "Manchester",
+    rate: 35,
+    imageUrl:
+      "https://nicetutor.co.uk/resized/blg/019/19/900z600_full_blg657c615038f643_07719149.jpeg",
+    services: [
+      "Exam preparation",
+      "GCSE & A-level support",
+      "Foundational math skills",
+    ],
   },
 ];

@@ -28,7 +28,7 @@ export default function MapComponent({ location }) {
   if (!isLoaded) return <div>Loading...</div>;
 
   return (
-    <div className="flex-1 h-60 bg-gray-200 rounded-lg">
+    <div className="flex-1 h-60  rounded-lg">
       <GoogleMap
         zoom={10}
         center={center}

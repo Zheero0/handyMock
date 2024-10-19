@@ -248,15 +248,15 @@ export default function ProListings() {
             </button>
 
             {/* Modal content */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
               {/* Left column: Image */}
-              <div className="h-[450px] relative">
+              <div className="h-full relative">
                 {" "}
                 {/* Set a height for the container */}
                 <img
                   src={selectedJob.imageUrl}
                   alt={selectedJob.title}
-                  className="w-full h-full object-cover rounded-xl" // Adjusted class for proper aspect ratio
+                  className="w-full h-full max-h-[700px] object-cover rounded-xl" // Adjusted class for proper aspect ratio
                 />
               </div>
 
@@ -302,7 +302,7 @@ export default function ProListings() {
                 </div>
 
                 {/* Bottom half: Map placeholder */}
-                <div className="flex-1 h-60 bg-gray-200 rounded-lg mt-3">
+                <div className="flex-1 h-60  rounded-lg mt-4">
                   <MapComponent location={selectedJob.location} />
                 </div>
               </div>
