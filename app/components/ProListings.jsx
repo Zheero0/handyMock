@@ -8,6 +8,7 @@ import MapComponent from "./MapComponent";
 import { FaSearch } from "react-icons/fa";
 import { FaList } from "react-icons/fa6";
 import Link from "next/link";
+import { FaHeart } from "react-icons/fa";
 
 export default function ProListings() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -108,88 +109,80 @@ export default function ProListings() {
         </Link>
       </div>
       {/* {" search inpt"} */}
-      <div className="flex flex-col justify-center mx-auto mb-4" >
-              <div className="flex justify-center items-center max-w-[1000px] w-full bg-white border border-gray-200 rounded-full shadow-md p-2 md:p-4 space-x-4">
-        {/* Job Title Input */}
-        <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
-          <label className="text-xs font-semibold ml-5 text-gray-600">
-            Job Title
-          </label>
-          <input
-            type="text"
-            placeholder="Search Jobs"
-
-
-            className="w-full px-4 py-2 rounded-full text-black bg-transparent focus:outline-none"
-          />
-        </div>{" "}
-        {/* Postcode Input */}
-        <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
-          <label className="text-xs font-semibold ml-5 text-gray-600">
-            Address
-          </label>
-          <input
-            type="text"
-            placeholder="Search Postcode"
-            className="w-full px-4 py-2 rounded-full text-black bg-transparent focus:outline-none"
-          />
+      <div className="flex flex-col justify-center mx-auto mb-4">
+        <div className="flex justify-center items-center max-w-[1000px] w-full bg-white border border-gray-200 rounded-full shadow-md p-2 md:p-4 space-x-4">
+          {/* Job Title Input */}
+          <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
+            <label className="text-xs font-semibold ml-5 text-gray-600">
+              Job Title
+            </label>
+            <input
+              type="text"
+              placeholder="Search Jobs"
+              className="w-full px-4 py-2 rounded-full text-black bg-transparent focus:outline-none"
+            />
+          </div>{" "}
+          {/* Postcode Input */}
+          <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
+            <label className="text-xs font-semibold ml-5 text-gray-600">
+              Address
+            </label>
+            <input
+              type="text"
+              placeholder="Search Postcode"
+              className="w-full px-4 py-2 rounded-full text-black bg-transparent focus:outline-none"
+            />
+          </div>
+          {/* Location Dropdown */}
+          <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
+            <label className="text-xs font-semibold text-gray-600 ml-5">
+              Radius
+            </label>
+            <select className="w-full px-4 py-2 rounded-full bg-transparent focus:outline-none">
+              <option>0 Miles</option>
+              <option>0-2 Miles</option>
+              <option>2-5 Miles</option>
+              <option>5-10 Miles</option>
+              <option>10-15 Miles</option>
+              <option>15-20 Miles</option>
+            </select>
+          </div>
+          {/* Location Dropdown */}
+          <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
+            <label className="text-xs font-semibold text-gray-600 ml-5">
+              Location
+            </label>
+            <select className="w-full px-4 py-2 rounded-full bg-transparent focus:outline-none">
+              <option value="">Any (UK)</option>
+              <option value="london">London</option>
+              <option value="manchester">Manchester</option>
+              <option value="birmingham">Birmingham</option>
+              <option value="edinburgh">Edinburgh</option>
+              <option value="liverpool">Liverpool</option>
+              <option value="glasgow">Glasgow</option>
+            </select>
+          </div>
+          {/* Rate Dropdown */}
+          <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
+            <label className="text-xs font-semibold ml-4 text-gray-600">
+              Rate
+            </label>
+            <select className="w-full px-4 py-2 rounded-full bg-transparent focus:outline-none">
+              <option value="">Any</option>
+              <option value="10">£0-50</option>
+              <option value="20">£50-100</option>
+              <option value="50">£100-200</option>
+              <option value="100">£200-500</option>
+              <option value="200">£500+</option>
+            </select>
+          </div>
+          {/* Search Button */}
+          <div className="relative">
+            <button className="p-2 md:p-5 bg-gradient-to-r from-blue-600 via-blue-600 to-blue-400 rounded-full text-white font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <FaSearch />
+            </button>
+          </div>
         </div>
-        {/* Location Dropdown */}
-        <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
-          <label className="text-xs font-semibold text-gray-600 ml-5">
-            Radius
-          </label>
-          <select className="w-full px-4 py-2 rounded-full bg-transparent focus:outline-none">
-            <option>0 Miles</option>
-            <option>0-2 Miles</option>
-            <option>2-5 Miles</option>
-            <option>5-10 Miles</option>
-            <option>10-15 Miles</option>
-            <option>15-20 Miles</option>
-          </select>
-        </div>
-        {/* Location Dropdown */}
-        <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
-          <label className="text-xs font-semibold text-gray-600 ml-5">
-            Location
-          </label>
-          <select
-
-            className="w-full px-4 py-2 rounded-full bg-transparent focus:outline-none"
-          >
-            <option value="">Any (UK)</option>
-            <option value="london">London</option>
-            <option value="manchester">Manchester</option>
-            <option value="birmingham">Birmingham</option>
-            <option value="edinburgh">Edinburgh</option>
-            <option value="liverpool">Liverpool</option>
-            <option value="glasgow">Glasgow</option>
-          </select>
-        </div>
-        {/* Rate Dropdown */}
-        <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
-          <label className="text-xs font-semibold ml-4 text-gray-600">
-            Rate
-          </label>
-          <select
-
-            className="w-full px-4 py-2 rounded-full bg-transparent focus:outline-none"
-          >
-            <option value="">Any</option>
-            <option value="10">£0-50</option>
-            <option value="20">£50-100</option>
-            <option value="50">£100-200</option>
-            <option value="100">£200-500</option>
-            <option value="200">£500+</option>
-          </select>
-        </div>
-        {/* Search Button */}
-        <div className="relative">
-          <button className="p-2 md:p-5 bg-gradient-to-r from-blue-600 via-blue-600 to-blue-400 rounded-full text-white font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <FaSearch />
-          </button>
-        </div>
-      </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -205,18 +198,28 @@ export default function ProListings() {
             <img
               src={job.imageUrl}
               alt={job.title}
-              className="w-[500px] h-[300px] md:h-[340px] object-cover rounded-[1.5rem]"
+              className="w-[500px] h-[300px] md:h-[340px] object-cover rounded-[1.5rem] relative"
             />
 
             {/* Card content */}
             <div className="px-0 md:text-md relative">
               {/* Blue strip for rate */}
-
+              <div
+                onClick={() => {
+                  openModal(index);
+                }}
+                className="absolute shadow-lg top-[-320px] right-[-12px]  p-2 w-[100px] h-[50px] bg-gradient-to-r from-blue-600 via-blue-600 to-blue-400 flex items-center justify-center rounded-full duration-200 hover:scale-110 hover:cursor-pointer"
+              >
+                <span className="text-white text-2xl flex items-center font-extrabold tracking-[0.7px]">
+                  <FaHeart className="inline-block mr-1" size={25} />
+                  {job.reviews}
+                </span>
+              </div>
               <div className="flex justify-between m-0">
                 {" "}
                 {/* Adjust padding-top for content */}
                 <div>
-                  <h3 className="pt-1 mb-0 md:text-md font-semibold">
+                  <h3 className="pt-1 mb-0 md:text-md font-semibold ">
                     {job.name}
                   </h3>
                   <p className="text-sm font-medium mb-1">{job.title}</p>

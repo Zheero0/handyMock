@@ -10,6 +10,7 @@ export const proMembersList = [
     imageUrl:
       "https://fromevijawithlove.com/wp-content/uploads/2016/09/diy-flooring-2000x1334.jpg",
     services: ["Carpet fitting", "Commercial spaces", "Residential homes"],
+    reviews: 25,
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ export const proMembersList = [
     imageUrl:
       "https://www.icominc.com/wp-content/uploads/2021/08/TA9Q9bV3Z81nZRooviZz51Y4bpnXIdBt1623180634.jpg",
     services: ["Pipe repair", "Bathroom installation", "Emergency callouts"],
+    reviews: 18,
   },
   {
     id: 3,
@@ -38,6 +40,7 @@ export const proMembersList = [
       "Corporate headshots",
       "Product photography",
     ],
+    reviews: 32,
   },
   {
     id: 4,
@@ -50,6 +53,7 @@ export const proMembersList = [
     imageUrl:
       "https://www.wmpeople.co.uk/wp-content/uploads/2023/05/Website-Post-Template.jpg",
     services: ["Website development", "E-commerce", "SEO optimization"],
+    reviews: 40,
   },
   {
     id: 5,
@@ -62,6 +66,7 @@ export const proMembersList = [
     imageUrl:
       "https://www.rmcad.edu/wp-content/uploads/2024/04/shutterstock_434383288.jpg",
     services: ["Explainer videos", "2D/3D animation", "Marketing animations"],
+    reviews: 29,
   },
   {
     id: 6,
@@ -74,6 +79,7 @@ export const proMembersList = [
     imageUrl:
       "https://firstcallelectricians.uk/wp-content/uploads/2023/09/Electrician-St-Albans-1.jpeg",
     services: ["Home rewiring", "Lighting installation", "Electrical repairs"],
+    reviews: 12,
   },
   {
     id: 7,
@@ -86,6 +92,7 @@ export const proMembersList = [
     imageUrl:
       "https://images.airtasker.com/v7/https://airtasker-seo-assets-prod.s3.amazonaws.com/en_AU/1629890716963_vidography-hero-min.jpg?w=2656&func=bound&org_if_sml=1",
     services: ["Promotional videos", "Event coverage", "Interviews"],
+    reviews: 35,
   },
   {
     id: 8,
@@ -98,6 +105,7 @@ export const proMembersList = [
     imageUrl:
       "https://www.aaarfg.com/wp-content/uploads/2021/11/questions-for-a-commercial-roofing-contractor.jpg",
     services: ["Roof repairs", "Gutter cleaning", "New installations"],
+    reviews: 22,
   },
   {
     id: 9,
@@ -110,6 +118,7 @@ export const proMembersList = [
     imageUrl:
       "https://www.abulegraphics.com/assets/media/components/b-main-slider/web-design-abuja-designer-agency-lagos-nigeria-digital-marketing-marketer-graphics-design-company.webp",
     services: ["Brand identity", "Logo design", "Print media"],
+    reviews: 15,
   },
   {
     id: 10,
@@ -122,6 +131,7 @@ export const proMembersList = [
     imageUrl:
       "https://www.rubi.com/en/blog/wp-content/uploads/2021/03/alicatar-una-pared.jpg",
     services: ["Bathroom tiling", "Flooring", "Kitchen backsplashes"],
+    reviews: 27,
   },
   {
     name: "Urban Interiors",
@@ -133,6 +143,7 @@ export const proMembersList = [
     imageUrl:
       "https://www.fairfield.edu/news/images/insight/914336614_grad_cas_grad-prog_interior-design_careers-worth-considering_600x370_07012022.jpg",
     services: ["Home decor", "Office spaces", "Renovations"],
+    reviews: 10,
   },
   {
     name: "MarketBuzz Agency",
@@ -148,6 +159,7 @@ export const proMembersList = [
       "Content creation",
       "Engagement strategies",
     ],
+    reviews: 30,
   },
   {
     name: "RankUp Digital",
@@ -158,6 +170,7 @@ export const proMembersList = [
     imageUrl:
       "https://www.syte.co.za/wp-content/uploads/2024/04/seo_expert_banner.jpg",
     services: ["SEO audits", "Keyword research", "On-page SEO"],
+    reviews: 33,
   },
   {
     name: "TechMobile Solutions",
@@ -168,6 +181,7 @@ export const proMembersList = [
     imageUrl:
       "https://media.licdn.com/dms/image/v2/D4D12AQGkhVu2gh8X6g/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1716287814954?e=2147483647&v=beta&t=GJ4uqwE33b3I-0-JlW3LEN8M0BjVxqEbDJx_l4mWIsw",
     services: ["App development", "UI/UX design", "App maintenance"],
+    reviews: 20,
   },
   {
     name: "UserFirst Designs",
@@ -179,6 +193,7 @@ export const proMembersList = [
     imageUrl:
       "https://www.simplilearn.com/ice9/free_resources_article_thumb/how_to_become_a_UI_UX_Designer.jpg",
     services: ["Website redesign", "Mobile app design", "User experience"],
+    reviews: 37,
   },
   {
     name: "RoofGuard Solutions",
@@ -190,6 +205,7 @@ export const proMembersList = [
     imageUrl:
       "https://thearchitectsdiary.com/wp-content/uploads/2021/03/5-Reasons-You-May-Need-To-Hire-A-Metal-Roofing-Contractor-1-1024x683.jpeg",
     services: ["Roof maintenance", "Leak repairs", "Flat roofs"],
+    reviews: 28,
   },
   {
     name: "Animotion Studios",
@@ -199,43 +215,8 @@ export const proMembersList = [
     location: "Remote",
     rate: 200,
     imageUrl:
-      "https://static.wixstatic.com/media/437529_f0bc377776c34ce2850f59e313103a58~mv2.jpeg/v1/fill/w_888,h_500,al_c,lg_1,q_85,enc_auto/437529_f0bc377776c34ce2850f59e313103a58~mv2.jpeg",
-    services: ["3D animation", "Motion graphics", "Explainer videos"],
-  },
-  {
-    name: "Storefront Solutions",
-    title: "Copywriter",
-    description:
-      "Copywriter providing engaging product descriptions and marketing copy.",
-    location: "Remote",
-    rate: 50,
-    imageUrl:
-      "https://assets.entrepreneur.com/content/3x2/2000/1601904712-GettyImages-889461006.jpg?format=pjeg&auto=webp&crop=16:9&width=675&height=380",
-    services: ["Product copywriting", "Blog writing", "SEO content"],
-  },
-  {
-    name: "General Fix Handyman",
-    title: "Handyman",
-    description:
-      "Skilled handyman available for home repairs, installations, and maintenance.",
-    location: "Newcastle",
-    rate: 45,
-    imageUrl: "https://theshs.co.uk/files/images/handyman.webp",
-    services: ["Home repairs", "Furniture assembly", "Painting"],
-  },
-  {
-    name: "Bright Minds Tutoring",
-    title: "Maths Tutor",
-    description:
-      "Experienced maths tutor available for students of all levels, specializing in exam preparation and foundational skills.",
-    location: "Manchester",
-    rate: 35,
-    imageUrl:
-      "https://nicetutor.co.uk/resized/blg/019/19/900z600_full_blg657c615038f643_07719149.jpeg",
-    services: [
-      "Exam preparation",
-      "GCSE & A-level support",
-      "Foundational math skills",
-    ],
+      "https://static.wixstatic.com/media/437529_f0bc377776c34ce2850f59e313103a58~mv2.jpeg/v1/fill/w_888,h_500,al_c,q_90/437529_f0bc377776c34ce2850f59e313103a58~mv2.jpg",
+    services: ["3D animations", "Character animations", "Visual effects"],
+    reviews: 11,
   },
 ];
