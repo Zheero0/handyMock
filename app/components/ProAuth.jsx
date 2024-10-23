@@ -11,14 +11,14 @@ export default function ProAuth() {
   const { isPro } = useAuth();
 
     let children = (
-        <MustBePro/>
+        <ProListings/>
     );
   
-  if (isPro) {
-    children = (
-    <ProListings/>
-  )    
-  }
+  // if (isPro) {
+  //   children = (
+  //   <ProListings/>
+  // )    
+  // }
   
   return(
   <div>

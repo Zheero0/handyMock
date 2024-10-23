@@ -80,6 +80,7 @@ export default function JobListings() {
 
   return (
     <div className="flex flex-col flex-1">
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {currentJobs.map((job, index) => (
           <div
@@ -103,7 +104,7 @@ export default function JobListings() {
                 onClick={() => {
                   openModal(index);
                 }}
-                className="absolute shadow-lg top-[-320px] right-[-12px]  p-2 w-[100px] h-[50px] bg-blue-600 flex items-center justify-center rounded-xl duration-200 hover:scale-110 hover:cursor-pointer"
+                className="absolute shadow-lg top-[-320px] right-[-12px]  p-2 w-[100px] h-[50px] bg-gradient-to-r from-blue-600 via-blue-600 to-blue-400 flex items-center justify-center rounded-full duration-200 hover:scale-110 hover:cursor-pointer"
               >
                 <span className="text-white text-2xl font-extrabold tracking-[0.7px]">
                   {"£" + job.rate}
@@ -124,12 +125,11 @@ export default function JobListings() {
                 {job.location}
               </p>
               <p className="font-bold">
-                Rate:{" "}
-                <span className="text-blue-500">{"£" + job.rate}</span>
+                Rate: <span className="text-blue-500">{"£" + job.rate}</span>
               </p>
               <button
                 onClick={() => openModal(index)}
-                className="mt-2 border-blue-600 border-2 rounded-lg p-1 px-2 text-white bg-blue-600 duration-200 hover:opacity-70 hover:scale-110"
+                className="mt-2 border-blue-600 border-1 rounded-full p-1 px-3 text-white bg-gradient-to-r from-blue-600 via-blue-600 to-blue-400 duration-200 hover:opacity-70 hover:scale-110"
               >
                 See More
               </button>
@@ -148,13 +148,13 @@ export default function JobListings() {
           <div className="bg-white p-9  rounded-[1rem] shadow-lg w-11/12 md:w-3/4 lg:w-3/4 relative z-99">
             {/* Arrow buttons */}
             <button
-              className="absolute left-[-30px] md:left-[-50px] top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full"
+              className="absolute left-[-30px] md:left-[-50px] top-1/2 transform -translate-y-1/2 bg-white p-2 px-3 rounded-lg"
               onClick={prevJob}
             >
               &#8592;
             </button>
             <button
-              className="absolute right-[-30px] md:right-[-50px] top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full"
+              className="absolute right-[-30px] md:right-[-50px] top-1/2 transform -translate-y-1/2 bg-white p-2 px-3 rounded-lg"
               onClick={nextJob}
             >
               &#8594;
@@ -163,15 +163,6 @@ export default function JobListings() {
             {/* Modal content */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Left column: Image */}
-              <div className="h-[450px] relative">
-                {" "}
-                {/* Set a height for the container */}
-                <img
-                  src={selectedJob.imageUrl}
-                  alt={selectedJob.title}
-                  className="w-full h-full object-cover rounded-xl" // Adjusted class for proper aspect ratio
-                />
-              </div>
 
               {/* Right column: 50-50 split */}
               <div className="flex flex-col ">
@@ -214,6 +205,15 @@ export default function JobListings() {
                 <div className="flex-1 h-60 bg-gray-200 rounded-lg mt-3">
                   <MapComponent location={selectedJob.location} />
                 </div>
+              </div>
+              <div className="h-[450px] relative">
+                {" "}
+                {/* Set a height for the container */}
+                <img
+                  src={selectedJob.imageUrl}
+                  alt={selectedJob.title}
+                  className="w-full h-full object-cover rounded-xl" // Adjusted class for proper aspect ratio
+                />
               </div>
             </div>
           </div>

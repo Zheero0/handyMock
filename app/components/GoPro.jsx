@@ -1,9 +1,8 @@
-"use client"
 import React from "react";
 import { useAuth } from "../authContext";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
-export default function MustBePro({ text }) {
+export default function GoPro() {
   const { goPro, isPro } = useAuth();
 
   const handlePro = () => {
@@ -14,12 +13,11 @@ export default function MustBePro({ text }) {
   return (
     <div className="p-8">
       {/* Title */}
-      <h1 className="text-3xl font-bold  text-center mb-2">
-        Only Pro users can <span className="text-blue-600">{text}</span>
+      <h1 className="text-3xl font-bold  text-center mb-1">
+        Unlock Premium Features & Elevate Your Experience
       </h1>
-      <p className="text-xl text-center mb-6">
-        Become a Handy Pro mmeber today and unlock your full potential and grow
-        your business 
+      <p className="text-lg text-gray-600 text-center mb-4">
+        Unlock your full potential and grow your business with Handy Pro.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-8 rounded-lg">

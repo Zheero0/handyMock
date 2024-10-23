@@ -14,8 +14,10 @@ export default function Button(props) {
     <Link href={url} passHref>
       <button
         className={
-          "rounded-full overflow-hidden duration-200 hover:opacity-60 border-2 border-solid border-blue-500 " +
-          (dark ? "text-white bg-blue-600 " : "text-blue-500 ") +
+          "rounded-full overflow-hidden duration-200 hover:opacity-60  " +
+          (dark
+            ? "text-white bg-gradient-to-r from-blue-600 via-blue-600 to-blue-400 "
+            : "text-blue-500 ") +
           (full ? "grid place-items-center w-full" : " ")
         }
       >
@@ -25,8 +27,10 @@ export default function Button(props) {
   ) : (
     <button
       className={
-        "rounded-full overflow-hidden duration-200 hover:opacity-60 border-2 border-solid border-blue-500 " +
-        (dark ? "text-white bg-blue-600 " : "text-blue-500 ") +
+        "rounded-full overflow-hidden duration-200 hover:opacity-60  " +
+        (dark
+          ? "text-white bg-gradient-to-r from-blue-600 via-blue-600 to-blue-400 "
+          : "text-blue-500 ") +
         (full ? "grid place-items-center w-full" : " ")
       }
     >

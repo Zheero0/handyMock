@@ -1,7 +1,9 @@
+"use client"
 import React from "react";
 import { FiUser, FiEdit } from "react-icons/fi";
 import { AiFillStar } from "react-icons/ai";
 import { FaCrown } from "react-icons/fa";
+import MapComponent from "./MapComponent";
 
    export const fakeUser = {
      name: "Jessica Carrington",
@@ -91,6 +93,9 @@ export default function Dashboard() {
           </div>
 
           {/* Action Buttons */}
+        </div>
+        <div>
+          <MapComponent/>
         </div>
       </div>
 

@@ -39,6 +39,8 @@ export default function Hero() {
         <h3 className="text-[1rem] sm:text-lg tracking-[1px] font-lato font-normal md:text-xl text-center max-w-[400px] sm:max-w-[500px] md:max-w-[700px]">
           Empowering Connections - Freedom to Earn
         </h3>
+        <p className="text-lg font-semibold my-3">Want to connect directly with a skilled professional?</p>
+        <Button text={ "Search Directory"} url={"/directory"} dark />
       </div>
 
       {/* Action Selector (Find Job / Post Job) */}
@@ -72,20 +74,16 @@ export default function Hero() {
               </label>
               <input
                 type="text"
-                placeholder="Search Area"
-
+                placeholder="Search Postcode"
                 className="w-full px-4 py-2 rounded-full text-black bg-transparent focus:outline-none"
               />
             </div>
-
             {/* Location Dropdown */}
             <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
               <label className="text-xs font-semibold text-gray-600 ml-5">
                 Radius
               </label>
-              <select
-                className="w-full px-4 py-2 rounded-full bg-transparent focus:outline-none"
-              >
+              <select className="w-full px-4 py-2 rounded-full bg-transparent focus:outline-none">
                 <option>0 Miles</option>
                 <option>0-2 Miles</option>
                 <option>2-5 Miles</option>
@@ -94,7 +92,7 @@ export default function Hero() {
                 <option>15-20 Miles</option>
               </select>
             </div>
-                        {/* Location Dropdown */}
+            {/* Location Dropdown */}
             <div className="flex flex-col rounded-full p-2 hover:bg-gray-100 transition-colors duration-200">
               <label className="text-xs font-semibold text-gray-600 ml-5">
                 Location
@@ -133,7 +131,7 @@ export default function Hero() {
             </div>
             {/* Search Button */}
             <div className="relative">
-              <button className="p-2 md:p-5 bg-blue-600 rounded-full text-white font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <button className="p-2 md:p-5 bg-gradient-to-r from-blue-600 via-blue-600 to-blue-400 rounded-full text-white font-semibold hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
                 <FaSearch />
               </button>
             </div>

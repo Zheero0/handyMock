@@ -37,7 +37,7 @@ export default function Login({ showExtraHeading, text }) {
       />
       <div className="max-w-[400px] w-full mx-auto flex flex-col justify-center">
         <button
-          className="bg-blue-600 text-white py-3 px-8 items-center place-content-center rounded-full text-2xl"
+          className="bg-gradient-to-l from-blue-600 via-blue-600 to-blue-400 text-white py-3 px-8 items-center place-content-center rounded-full text-2xl"
           onClick={handleAuth}
         >
           {" "}

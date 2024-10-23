@@ -1,5 +1,6 @@
 export const proMembersList = [
   {
+    id: 1,
     name: "Tom's Flooring Services",
     title: "Carpet Fitter",
     description:
@@ -11,6 +12,7 @@ export const proMembersList = [
     services: ["Carpet fitting", "Commercial spaces", "Residential homes"],
   },
   {
+    id: 2,
     name: "John's Plumbing",
     title: "Plumber",
     description:
@@ -22,6 +24,7 @@ export const proMembersList = [
     services: ["Pipe repair", "Bathroom installation", "Emergency callouts"],
   },
   {
+    id: 3,
     name: "LensCraft Studios",
     title: "Photographer",
     description:
@@ -37,6 +40,7 @@ export const proMembersList = [
     ],
   },
   {
+    id: 4,
     name: "GreenTech Web Solutions",
     title: "Web Developer",
     description:
@@ -48,6 +52,7 @@ export const proMembersList = [
     services: ["Website development", "E-commerce", "SEO optimization"],
   },
   {
+    id: 5,
     name: "Creative Motion",
     title: "Animation Artist",
     description:
@@ -59,6 +64,7 @@ export const proMembersList = [
     services: ["Explainer videos", "2D/3D animation", "Marketing animations"],
   },
   {
+    id: 6,
     name: "BrightSpark Electrical",
     title: "Electrician",
     description:
@@ -70,6 +76,7 @@ export const proMembersList = [
     services: ["Home rewiring", "Lighting installation", "Electrical repairs"],
   },
   {
+    id: 7,
     name: "Vision Media Productions",
     title: "Videographer",
     description:
@@ -81,6 +88,7 @@ export const proMembersList = [
     services: ["Promotional videos", "Event coverage", "Interviews"],
   },
   {
+    id: 8,
     name: "Skyline Roofing Co.",
     title: "Roofing Contractor",
     description:
@@ -92,6 +100,7 @@ export const proMembersList = [
     services: ["Roof repairs", "Gutter cleaning", "New installations"],
   },
   {
+    id: 9,
     name: "Bold Designs Studio",
     title: "Graphic Designer",
     description:
@@ -103,6 +112,7 @@ export const proMembersList = [
     services: ["Brand identity", "Logo design", "Print media"],
   },
   {
+    id: 10,
     name: "TileMaster Renovations",
     title: "Tiling Specialist",
     description:

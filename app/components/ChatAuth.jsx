@@ -9,7 +9,7 @@ export default function ChatAuth() {
     const { isAuthenticated, isPro } = useAuth();
 
     let children = (
-        <MustBePro/>
+        <MustBePro text={"use the Chat feature"}/>
     )
 
     if (isPro) {

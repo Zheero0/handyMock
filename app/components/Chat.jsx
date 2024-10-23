@@ -9,7 +9,7 @@ export default function Chat() {
   const router = useRouter();
 
   return (
-    <div className="p-8 pb-2   w-full rounded-[1rem] grid grid-cols-[auto_1fr] gap-10 ">
+    <div className="p-2 pt-0 pb-2   w-full rounded-[1rem] grid grid-cols-[auto_1fr] gap-10 ">
       <div>
               <button
         onClick={() => {
