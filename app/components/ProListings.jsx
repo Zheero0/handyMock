@@ -277,7 +277,14 @@ export default function ProListings() {
               <div className="flex flex-col ">
                 {/* Top half: Job details */}
                 <div className=" flex-1 flex-col justify-between">
-                  <h2 className="text-3xl font-bold ">{selectedJob.title}</h2>
+                  <div className="flex justify-between">
+                    <h2 className="text-3xl font-bold ">{selectedJob.title}</h2>
+                    <div className="flex items-center">
+                      <FaHeart className=" text-blue-600 mr-[2px]"/>
+                                            <p className="font-semibold mr-4">{selectedJob.reviews}</p>
+                      </div>
+
+                  </div>
                   <p className=" leading-[1.1rem] mb-2 md:text-sm sm:text-md ">
                     Listed by:{" "}
                     <span className=" underline hover:cursor-pointer">
