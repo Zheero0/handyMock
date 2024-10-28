@@ -198,14 +198,16 @@ export default function ProListings() {
 
         <div className="w-full mt-5 py-4 flex justify-center">
           {iconArray.map((icon, index) => (
-            <button
-              key={index}
-              onClick={() => filterByCategory(icon.name)}
-              className="flex flex-col justify-center items-center mx-5 text-blue-600 duration-[0.3s] hover:scale-110"
-            >
-              {icon.icon}
-              <p className="my-1">{icon.name}</p>
-            </button>
+            <div>
+              <button
+                key={index}
+                onClick={() => filterByCategory(icon.name)}
+                className="flex flex-col justify-center items-center mx-5 text-blue-600 duration-[0.3s] hover:scale-110"
+              >
+                {icon.icon}
+                <p className="my-1">{icon.name}</p>
+              </button>
+            </div>
           ))}
         </div>
       </div>
@@ -229,13 +231,12 @@ export default function ProListings() {
                 </h3>
                 <p className="text-sm font-medium mb-1">{job.title}</p>
                 <div className="flex items-center">
-                  <p className="font-bold">Reviews: &nbsp; </p>
-                  <p className=" mr-1">{job.reviews}</p>
-                  <FaHeart className=" text-blue-600 mr-[2px]" />
-
+                  <p className="font-bold text-sm">Reviews: &nbsp; </p>
+                  <p className=" mr-1  text-sm">{job.reviews}</p>
+                  <FaHeart className=" text-blue-600 mr-[2px] size-3" />
                 </div>
-                <p className="">
-                  <span className="font-bold">Location: </span>
+                <p className=" text-sm">
+                  <span className="font-bold  text-sm">Location: </span>
                   {job.location}
                 </p>
                 {/* <p className="font-bold ">
@@ -289,7 +290,7 @@ export default function ProListings() {
                 {/* Top half: Job details */}
                 <div className=" flex-1 flex-col justify-between">
                   <div className="flex justify-between">
-                    <h2 className="text-3xl font-bold ">{selectedJob.title}</h2>
+                    <h2 className="text-xl font-bold m-0 ">{selectedJob.title}</h2>
                     <div className="flex items-center">
                       <FaHeart className=" text-blue-600 mr-[2px]" />
                       <p className="font-semibold mr-4">
@@ -304,23 +305,25 @@ export default function ProListings() {
                     </span>
                   </p>
                   <p className=" leading-[1.1rem] mb-1">
-                    <span className="font-extrabold mb-2">Description:</span>
+                    <span className="font-extrabold mb-2  text-sm">
+                      Description:
+                    </span>
                     <br />
                     {selectedJob.description}
                   </p>
-                  <p>
-                    <span className="font-bold leading-[0.2rem] mb-2">
+                  <p className="text-sm">
+                    <span className="font-bold leading-[0.2rem] mb-2 text-sm">
                       Location:{" "}
                     </span>
                     {selectedJob.location}
                   </p>
-                  <p className="font-black mb-2">
+                  <p className="font-black mb-2 text-sm">
                     Rate:{" "}
                     <span className=" font-black text-blue-500 ">
                       {"£" + selectedJob.rate}
                     </span>
                   </p>
-                  <ul className="flex flex-wrap gap-2 my-3 ">
+                  <ul className="flex flex-wrap gap-2 my-3 text-xs">
                     {selectedJob.services.map((skill, index) => (
                       <li
                         key={index}
@@ -330,7 +333,11 @@ export default function ProListings() {
                       </li>
                     ))}
                   </ul>
-                  <Button text={`Contact ${selectedJob.name}`} dark />
+                  <Button
+                    text={`Contact ${selectedJob.name}`}
+                    dark
+                    font
+                  />
                 </div>
 
                 {/* Bottom half: Map placeholder */}
