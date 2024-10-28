@@ -4,7 +4,7 @@ import Main from "../components/Main";
 import ChatAuth from "../components/ChatAuth";
 
 export const metadata = {
-  title: "handy ⋅ Chat",
+  title: "Any Task ⋅ Chat",
 };
 
 export default function ChatPage() {

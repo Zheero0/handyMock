@@ -5,7 +5,7 @@ import ProListings from '../components/ProListings';
 
 
 export const metadata = {
-  title: "handy ⋅ Directory",
+  title: "Any Task ⋅ Directory",
 };
 
 export default function DirectoryPage() {

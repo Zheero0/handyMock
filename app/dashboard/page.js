@@ -6,7 +6,7 @@ import Main from '../components/Main';
 import DashboardAuth from '../components/DashboardAuth';
 
     export const metadata = {
-      title: "handy ⋅ Dashboard",
+      title: "Any Task ⋅ Dashboard",
     };
 
 export default function DashboardPage() {
