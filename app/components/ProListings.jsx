@@ -217,22 +217,30 @@ export default function ProListings() {
             onClick={() => {
               openModal(index);
             }}
-            className="flex rounded-xl  shadow-lg hover:shadow-md bg-transparent hover:shadow-blue-200 max-w-[500px] h-[180px] m-2 relative transition-transform duration-[1s] transform hover:scale-105"
+            className="flex rounded-xl  shadow-lg hover:shadow-md bg-transparent hover:shadow-blue-200 max-w-[500px] h-[150px] m-2 relative transition-transform duration-[1s] transform hover:scale-105"
           >
             {/* Image on the left */}
 
             {/* Card content on the right */}
             <div className="flex-grow p-4  flex flex-col justify-center bg-gradient-to-r from-white via-white to-blue-100">
               <div>
-                <h3 className="text-xl font-semibold text-blue-500">{job.name}</h3>
+                <h3 className="text-xl font-semibold text-blue-500">
+                  {job.name}
+                </h3>
                 <p className="text-sm font-medium mb-1">{job.title}</p>
+                <div className="flex items-center">
+                  <p className="font-bold">Reviews: &nbsp; </p>
+                  <p className=" mr-1">{job.reviews}</p>
+                  <FaHeart className=" text-blue-600 mr-[2px]" />
+
+                </div>
                 <p className="">
                   <span className="font-bold">Location: </span>
                   {job.location}
                 </p>
-                <p className="font-bold ">
+                {/* <p className="font-bold ">
                   Description: <br></br> <span className="font-normal">{ job.description}</span>
-                </p>
+                </p> */}
               </div>
               {/* <button
                 onClick={() => openModal(index)}
