@@ -225,16 +225,16 @@ export default function ProListings() {
             {/* Card content on the right */}
             <div className="flex-grow p-4  flex flex-col justify-center bg-gradient-to-r from-white via-white to-blue-100">
               <div>
-                <p className="text-[11px] font-black text-[#3a4a5b]">
+                <p className="text-[11px] font-black leading-[10px] text-[#3a4a5b]">
                   HANDI CERTIFIED USER
                 </p>
                 <h3 className="text-xl font-semibold text-blue-500 ">
                   {job.name}
                 </h3>
-                <p className="text-sm font-medium mb-1 text-[#3a4a5b] ">
+                <p className="text-sm font-medium mb-1 text-[#3a4a5b] leading-[10px] ">
                   {job.title}
                 </p>
-                <div className="flex items-center">
+                <div className="flex items-center mt-2">
                   <p className="font-bold text-sm text-[#3a4a5b] ">
                     Reviews: &nbsp;{" "}
                   </p>
@@ -261,7 +261,7 @@ export default function ProListings() {
             <img
               src={job.imageUrl}
               alt={job.title}
-              className="w-[150px] h-full object-cover rounded-r-xl" // Adjust width and height here
+              className="w-[250px] h-full object-cover rounded-r-xl" // Adjust width and height here
             />
           </div>
         ))}
