@@ -80,7 +80,6 @@ export default function JobListings() {
 
   return (
     <div className="flex flex-col flex-1">
-
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {currentJobs.map((job, index) => (
           <div
@@ -88,17 +87,17 @@ export default function JobListings() {
             onClick={() => {
               openModal(index);
             }}
-            className="rounded-xl bg-transparent flex flex-col justify-between m-2 max-w-[400px] sm:max-w-[500px] md:max-w-[300px] relative transition-transform duration-300 transform hover:scale-105"
+            className="rounded-xl bg-transparent shadow-lg  flex flex-col justify-between m-2 max-w-[400px] sm:max-w-[500px] md:max-w-[300px] relative transition-transform duration-[1s] transform hover:scale-105 hover:shadow-blue-400"
           >
             {/* Image at the top */}
             <img
               src={job.imageUrl}
               alt={job.title}
-              className="w-[500px] h-[300px] md:h-[340px] object-cover rounded-[1.5rem]"
+              className="w-[500px] h-[300px] md:h-[340px] object-cover rounded-t-[1.5rem]"
             />
 
             {/* Card content */}
-            <div className="px-0 md:text-md relative">
+            <div className="px-2 pb-3 md:text-md relative">
               {/* Blue strip for rate */}
               <div
                 onClick={() => {
@@ -114,18 +113,22 @@ export default function JobListings() {
               <div className="flex justify-between m-0">
                 {" "}
                 {/* Adjust padding-top for content */}
-                <h3 className="pt-1 md:text-md font-semibold">{job.title}</h3>
+                <h3 className="pt-1 text-lg font-semibold text-blue-600">
+                  {job.title}
+                </h3>
                 <button className="cursor-pointer transition-transform duration-300 transform hover:scale-125 p-[0.2rem] pb-[0.3rem] pt-[0.5rem] pr-0">
-                  <CiBookmark className="w-5 h-5 text-gray-400" />
+                  <CiBookmark className="w-5 h-5 text-[#3a4a5b]" />
                 </button>
               </div>
-              <p className="text leading-tight">{job.description}</p>
-              <p>
-                <span className="font-bold">Location: </span>
+              <p className="text leading-tight text-[#3a4a5b]">
+                {job.description}
+              </p>
+              <p className="text-[#3a4a5b]">
+                <span className="font-bold ">Location: </span>
                 {job.location}
               </p>
-              <p className="font-bold">
-                Rate: <span className="text-blue-500">{"£" + job.rate}</span>
+              <p className="font-bold text-[#3a4a5b]">
+                Rate: <span className="text-blue-500 text-xl font-extrabold ">{"£" + job.rate}</span>
               </p>
               <button
                 onClick={() => openModal(index)}

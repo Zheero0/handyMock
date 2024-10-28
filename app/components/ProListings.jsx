@@ -277,13 +277,13 @@ export default function ProListings() {
           <div className=" bg-gradient-to-r from-white via-white to-blue-200  p-9  rounded-[1rem] shadow-lg w-11/12 md:w-3/4 lg:w-3/4 relative z-99">
             {/* Arrow buttons */}
             <button
-              className="absolute left-[-30px] md:left-[-50px] top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full"
+              className="absolute left-[-30px] md:left-[-50px] top-1/2 transform -translate-y-1/2 bg-gray-200 py-2 px-3 rounded-full"
               onClick={prevJob}
             >
               &#8592;
             </button>
             <button
-              className="absolute right-[-30px] md:right-[-50px] top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full"
+              className="absolute right-[-30px] md:right-[-50px] top-1/2 transform -translate-y-1/2 bg-gray-200 py-2 px-3 rounded-full"
               onClick={nextJob}
             >
               &#8594;
