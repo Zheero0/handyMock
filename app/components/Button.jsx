@@ -32,7 +32,7 @@ export default function Button(props) {
           ? "text-white bg-gradient-to-r from-blue-600 via-blue-600 to-blue-400 "
           : "text-blue-500 ") +
         (full ? "grid place-items-center w-full" : "") +
-        (font ? " text-[12px] px-0 py-0 text-[#e4e4e4]" : "")
+        (font ? " text-[15px] px-0 py-0 text-[#e4e4e4] " : "")
       }
     >
       {buttonContent}

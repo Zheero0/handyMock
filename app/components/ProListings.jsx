@@ -198,9 +198,8 @@ export default function ProListings() {
 
         <div className="w-full mt-5 py-4 flex justify-center">
           {iconArray.map((icon, index) => (
-            <div>
+            <div key={index}>
               <button
-                key={index}
                 onClick={() => filterByCategory(icon.name)}
                 className="flex flex-col justify-center items-center mx-5 text-blue-600 duration-[0.3s] hover:scale-110"
               >
