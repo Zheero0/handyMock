@@ -13,26 +13,15 @@ import { iconArray } from "../utils/iconData";
 
 export default function ProListings() {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6;
+  const itemsPerPage = 9;
 
   // State to hold filtered job listings
   const [filteredJobs, setFilteredJobs] = useState(proMembersList);
 
-  // Function to filter jobs by category
-  const filterByCategory = (category) => {
-    if (category === "All") {
-      setFilteredJobs(proMembersList);
-    } else {
-      const filtered = proMembersList.filter(
-        (job) => job.category === category
-      );
-      setFilteredJobs(filtered);
-    }
-    setCurrentPage(1); // Reset to first page when filter is applied
-  };
-
-  // Calculate pagination
+  // Calculate total pages based on filtered jobs
   const totalPages = Math.ceil(filteredJobs.length / itemsPerPage);
+
+  // Get current jobs to display based on the page
   const currentJobs = filteredJobs.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
@@ -196,42 +185,46 @@ export default function ProListings() {
           </div>
         </div>
 
-        <div className="w-full mt-5 py-4 flex justify-center">
+        <div className=" w-full mt-5  py-4 flex justify-center">
           {iconArray.map((icon, index) => (
-            <button
-              key={index}
-              onClick={() => filterByCategory(icon.name)}
-              className="flex flex-col justify-center items-center mx-5 text-blue-600 duration-[0.3s] hover:scale-110"
-            >
-              {icon.icon}
-              <p className="my-1">{icon.name}</p>
-            </button>
+            <div key={index}>
+              <button className="flex flex-col justify-center items-center mx-5 text-blue-600 duration-[0.3s] hover:scale-110 ">
+                {icon.icon}
+                <p className="my-1">{icon.name}</p>{" "}
+                {/* Dynamically rendering the name */}
+              </button>
+            </div>
           ))}
         </div>
       </div>
 
-      <div className="grid grid-cols-1 relative sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-2 gap-4 rounded-r-xl justify-center mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center mx-auto">
         {currentJobs.map((job, index) => (
           <div
             key={index}
             onClick={() => {
               openModal(index);
             }}
-            className="flex rounded-xl  shadow-lg hover:shadow-md bg-transparent hover:shadow-blue-400 max-w-[500px] h-[165px] m-2 relative transition-transform duration-[1s] transform hover:scale-105"
+            className="flex rounded-xl bg-transparent max-w-[600px] h-[200px] m-2 relative transition-transform duration-300 transform hover:scale-105"
           >
             {/* Image on the left */}
+            <img
+              src={job.imageUrl}
+              alt={job.title}
+              className="w-[200px] h-full object-cover rounded-l-xl" // Adjust width and height here
+            />
 
             {/* Card content on the right */}
-            <div className="flex-grow p-4  flex flex-col justify-center">
+            <div className="flex-grow p-4 flex flex-col justify-between">
               <div>
-                <h3 className="text-xl font-semibold">{job.name}</h3>
+                <h3 className="mb-1 text-md font-semibold">{job.name}</h3>
                 <p className="text-sm font-medium mb-1">{job.title}</p>
-                <p className="">
+                <p>
                   <span className="font-bold">Location: </span>
                   {job.location}
                 </p>
-                <p className="font-bold ">
-                  Description: <br></br> <span className="font-normal">{ job.description}</span>
+                <p className="font-bold">
+                  Rate: <span className="text-blue-500">{"£" + job.rate}</span>
                 </p>
               </div>
               {/* <button
@@ -241,11 +234,6 @@ export default function ProListings() {
                 See More
               </button> */}
             </div>
-            <img
-              src={job.imageUrl}
-              alt={job.title}
-              className="w-[150px] h-full object-cover rounded-r-xl" // Adjust width and height here
-            />
           </div>
         ))}
       </div>

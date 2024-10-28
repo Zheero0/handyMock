@@ -10,17 +10,15 @@ import { FaSearch } from "react-icons/fa";
 import { jobListings } from "../utils/jobLists";
 import ToggleAuth from "./ToggleAuth";
 
-
 export default function Hero() {
   const [selectedAction, setSelectedAction] = useState("findJob");
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("");
   const [selectedRate, setSelectedRate] = useState("");
 
-    const [jobs, setJobs] = useState([]);
-    const [filteredJobs, setFilteredJobs] = useState([]);
-    
-    
+  const [jobs, setJobs] = useState([]);
+  const [filteredJobs, setFilteredJobs] = useState([]);
+
   // Handle the action change (Find Job or Post Job)
   const handleActionChange = (action) => {
     setSelectedAction(action);
@@ -39,8 +37,10 @@ export default function Hero() {
         <h3 className="text-[1rem] sm:text-lg tracking-[1px] font-lato font-normal md:text-xl text-center max-w-[400px] sm:max-w-[500px] md:max-w-[700px]">
           Empowering Connections - Freedom to Earn
         </h3>
-        <p className="text-lg font-semibold my-3">Want to connect directly with a skilled professional?</p>
-        <Button text={ "Search Directory"} url={"/directory"} dark />
+        <p className="text-lg font-semibold my-3">
+          Want to connect directly with a skilled professional?
+        </p>
+        <Button text={"Search Directory"} url={"/directory"} dark />
       </div>
 
       {/* Action Selector (Find Job / Post Job) */}

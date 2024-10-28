@@ -1,0 +1,64 @@
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {currentJobs.map((job, index) => (
+          <div
+            key={index}
+            onClick={() => {
+              openModal(index);
+            }}
+            className="rounded-xl bg-transparent flex flex-col justify-between m-2 max-w-[400px] sm:max-w-[500px] md:max-w-[300px] relative transition-transform duration-300 transform hover:scale-105"
+          >
+            <div>
+              
+            </div>
+            {/* Image at the top */}
+            <img
+              src={job.imageUrl}
+              alt={job.title}
+              className="w-[500px] h-[300px] md:h-[340px] object-cover rounded-[1.5rem] relative"
+            />
+
+            {/* Card content */}
+            <div className="px-0 md:text-md relative">
+              {/* Blue strip for rate */}
+              <div
+                onClick={() => {
+                  openModal(index);
+                }}
+                className="absolute shadow-lg top-[-320px] right-[-12px]  p-2 w-[100px] h-[50px] bg-gradient-to-r from-blue-600 via-blue-600 to-blue-400 flex items-center justify-center rounded-full duration-200 hover:scale-110 hover:cursor-pointer"
+              >
+                <span className="text-white text-2xl flex items-center font-extrabold tracking-[0.7px]">
+                  <FaHeart className="inline-block mr-1" size={25} />
+                  {job.reviews}
+                </span>
+              </div>
+              <div className="flex justify-between m-0">
+                {" "}
+                {/* Adjust padding-top for content */}
+                <div>
+                  <h3 className="pt-1 mb-0 md:text-md font-semibold ">
+                    {job.name}
+                  </h3>
+                  <p className="text-sm font-medium mb-1">{job.title}</p>
+                </div>
+                <button className="cursor-pointer transition-transform duration-300 transform hover:scale-125 p-[0.2rem] pb-[0.3rem] pt-[0.5rem] pr-0">
+                  <CiBookmark className="w-5 h-5 text-gray-400" />
+                </button>
+              </div>
+              <p className="text leading-tight">{job.description}</p>
+              <p>
+                <span className="font-bold">Location: </span>
+                {job.location}
+              </p>
+              <p className="font-bold">
+                Rate: <span className="text-blue-500">{"£" + job.rate}</span>
+              </p>
+              <button
+                onClick={() => openModal(index)}
+                className="mt-2  rounded-full p-1 px-3 text-white bg-gradient-to-r from-blue-600 via-blue-600 to-blue-400 duration-200 hover:opacity-70 hover:scale-110"
+              >
+                See More
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>

@@ -48,7 +48,7 @@ export default function GoPro() {
 
           {/* Additional Information */}
           <div className="mt-6 text-gray-700">
-            <p className="font-semibold text-sm">Did you know?</p>
+            <p className="font-semibold text-lg text-blue-600">Did you know?</p>
             <p className="font-meduim text-lg">
               Pro members earn up to{" "}
               <span className="text-blue-600 font-bold">£2,000 per month</span>{" "}

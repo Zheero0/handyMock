@@ -19,7 +19,7 @@ export default function MustBePro({ text }) {
       </h1>
       <p className="text-xl text-center mb-6">
         Become a Handy Pro mmeber today and unlock your full potential and grow
-        your business 
+        your business
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-8 rounded-lg">
@@ -31,26 +31,38 @@ export default function MustBePro({ text }) {
           </p>
           <ul className="space-y-4 text-gray-700">
             <li className="flex items-center font-semibold text-xl">
-              <AiOutlineCheckCircle className="inline-block mr-1 text-2xl text-green-500" />
+              <AiOutlineCheckCircle
+                size={20}
+                className="inline-block mr-1 text-2xl text-green-500"
+              />
               Enhanced profile visibility for more opportunities
             </li>
             <li className="flex items-center font-semibold text-xl">
-              <AiOutlineCheckCircle className="inline-block mr-1 text-2xl  text-green-500" />
+              <AiOutlineCheckCircle
+                size={20}
+                className="inline-block mr-1 text-2xl  text-green-500"
+              />
               Access and apply to job listings not available to free users
             </li>
             <li className="flex items-center font-semibold text-xl">
-              <AiOutlineCheckCircle className="inline-block mr-1 text-2xl text-green-500" />
+              <AiOutlineCheckCircle
+                size={20}
+                className="inline-block mr-1 text-2xl text-green-500"
+              />
               Priority support from our team
             </li>
             <li className="flex items-center font-semibold text-xl">
-              <AiOutlineCheckCircle className="inline-block text-2xl mr-1 text-green-500" />
+              <AiOutlineCheckCircle
+                size={20}
+                className="inline-block text-2xl mr-1 text-green-500"
+              />
               Exclusive tools to manage jobs more efficiently
             </li>
           </ul>
 
           {/* Additional Information */}
           <div className="mt-6 text-gray-700">
-            <p className="font-semibold text-sm">Did you know?</p>
+            <p className="font-semibold text-lg text-blue-600">Did you know?</p>
             <p className="font-meduim text-lg">
               Pro members earn up to{" "}
               <span className="text-blue-600 font-bold">£2,000 per month</span>{" "}
