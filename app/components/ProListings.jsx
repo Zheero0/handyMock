@@ -226,17 +226,26 @@ export default function ProListings() {
             {/* Card content on the right */}
             <div className="flex-grow p-4  flex flex-col justify-center bg-gradient-to-r from-white via-white to-blue-100">
               <div>
-                <h3 className="text-xl font-semibold text-blue-500">
+                <p className="text-[11px] font-black text-[#3a4a5b]">
+                  HANDI CERTIFIED USER
+                </p>
+                <h3 className="text-xl font-semibold text-blue-500 ">
                   {job.name}
                 </h3>
-                <p className="text-sm font-medium mb-1">{job.title}</p>
+                <p className="text-sm font-medium mb-1 text-[#3a4a5b] ">
+                  {job.title}
+                </p>
                 <div className="flex items-center">
-                  <p className="font-bold text-sm">Reviews: &nbsp; </p>
-                  <p className=" mr-1  text-sm">{job.reviews}</p>
+                  <p className="font-bold text-sm text-[#3a4a5b] ">
+                    Reviews: &nbsp;{" "}
+                  </p>
+                  <p className=" mr-1  text-sm text-[#3a4a5b]">{job.reviews}</p>
                   <FaHeart className=" text-blue-600 mr-[2px] size-3" />
                 </div>
-                <p className=" text-sm">
-                  <span className="font-bold  text-sm">Location: </span>
+                <p className=" text-sm text-[#3a4a5b]">
+                  <span className="font-bold  text-sm text-[#3a4a5b]">
+                    Location:{" "}
+                  </span>
                   {job.location}
                 </p>
                 {/* <p className="font-bold ">
@@ -266,7 +275,7 @@ export default function ProListings() {
           className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 "
           onClick={handleOverlayClick}
         >
-          <div className="bg-white p-9  rounded-[1rem] shadow-lg w-11/12 md:w-3/4 lg:w-3/4 relative z-99">
+          <div className=" bg-gradient-to-r from-white via-white to-blue-200  p-9  rounded-[1rem] shadow-lg w-11/12 md:w-3/4 lg:w-3/4 relative z-99">
             {/* Arrow buttons */}
             <button
               className="absolute left-[-30px] md:left-[-50px] top-1/2 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full"
@@ -289,8 +298,10 @@ export default function ProListings() {
               <div className="flex flex-col ">
                 {/* Top half: Job details */}
                 <div className=" flex-1 flex-col justify-between">
-                  <div className="flex justify-between">
-                    <h2 className="text-xl font-bold m-0 ">{selectedJob.title}</h2>
+                  <div className="flex justify-between text-[#3a4a5b]">
+                    <h2 className="text-xl font-bold m-0 ">
+                      {selectedJob.title}
+                    </h2>
                     <div className="flex items-center">
                       <FaHeart className=" text-blue-600 mr-[2px]" />
                       <p className="font-semibold mr-4">
@@ -298,26 +309,26 @@ export default function ProListings() {
                       </p>
                     </div>
                   </div>
-                  <p className=" leading-[1.1rem] mb-2 md:text-sm sm:text-md ">
+                  <p className=" leading-[1.1rem] mb-2 md:text-sm sm:text-md text-[#3a4a5b]">
                     Listed by:{" "}
                     <span className=" underline hover:cursor-pointer">
                       {selectedJob.name}
                     </span>
                   </p>
-                  <p className=" leading-[1.1rem] mb-1">
+                  <p className=" leading-[1.1rem] mb-1 text-[#3a4a5b]">
                     <span className="font-extrabold mb-2  text-sm">
                       Description:
                     </span>
                     <br />
                     {selectedJob.description}
                   </p>
-                  <p className="text-sm">
+                  <p className="text-sm text-[#3a4a5b]">
                     <span className="font-bold leading-[0.2rem] mb-2 text-sm">
                       Location:{" "}
                     </span>
                     {selectedJob.location}
                   </p>
-                  <p className="font-black mb-2 text-sm">
+                  <p className="font-black mb-2 text-sm text-[#3a4a5b]">
                     Rate:{" "}
                     <span className=" font-black text-blue-500 ">
                       {"£" + selectedJob.rate}
@@ -333,11 +344,7 @@ export default function ProListings() {
                       </li>
                     ))}
                   </ul>
-                  <Button
-                    text={`Contact ${selectedJob.name}`}
-                    dark
-                    font
-                  />
+                  <Button text={`Contact ${selectedJob.name}`} dark font />
                 </div>
 
                 {/* Bottom half: Map placeholder */}
