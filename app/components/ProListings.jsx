@@ -217,14 +217,14 @@ export default function ProListings() {
             onClick={() => {
               openModal(index);
             }}
-            className="flex rounded-xl  shadow-lg hover:shadow-md bg-transparent hover:shadow-blue-400 max-w-[500px] h-[165px] m-2 relative transition-transform duration-[1s] transform hover:scale-105"
+            className="flex rounded-xl  shadow-lg hover:shadow-md bg-transparent hover:shadow-blue-200 max-w-[500px] h-[180px] m-2 relative transition-transform duration-[1s] transform hover:scale-105"
           >
             {/* Image on the left */}
 
             {/* Card content on the right */}
-            <div className="flex-grow p-4  flex flex-col justify-center">
+            <div className="flex-grow p-4  flex flex-col justify-center bg-gradient-to-r from-white via-white to-blue-100">
               <div>
-                <h3 className="text-xl font-semibold">{job.name}</h3>
+                <h3 className="text-xl font-semibold text-blue-500">{job.name}</h3>
                 <p className="text-sm font-medium mb-1">{job.title}</p>
                 <p className="">
                   <span className="font-bold">Location: </span>
