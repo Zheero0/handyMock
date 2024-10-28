@@ -87,7 +87,7 @@ export default function JobListings() {
             onClick={() => {
               openModal(index);
             }}
-            className="rounded-xl bg-transparent shadow-lg cursor-pointer flex flex-col justify-between m-2 max-w-[400px] sm:max-w-[500px] md:max-w-[300px] relative transition-transform duration-[1s] transform hover:scale-105 hover:shadow-blue-400"
+            className="rounded-xl bg-transparent shadow-lg cursor-pointer flex flex-col justify-between m-2 max-w-[400px] sm:max-w-[500px] md:max-w-[300px] relative transition-transform duration-[1s] transform hover:scale-105 hover:shadow-blue-200 hover:shadow-md"
           >
             {/* Image at the top */}
             <img
