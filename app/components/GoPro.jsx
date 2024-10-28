@@ -11,13 +11,13 @@ export default function GoPro() {
   };
 
   return (
-    <div className="p-8">
+    <div className="p-8 flex flex-col flex-1">
       {/* Title */}
       <h1 className="text-3xl font-bold  text-center mb-1">
         Unlock Premium Features & Elevate Your Experience
       </h1>
       <p className="text-lg text-gray-600 text-center mb-4">
-        Unlock your full potential and grow your business with Handy Pro.
+        Unlock your full potential and grow your business with Any Task Pro.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-8 rounded-lg">
@@ -25,7 +25,7 @@ export default function GoPro() {
         <div className="bg-white p-6 rounded-lg shadow-md duration-200 hover:shadow-blue-400">
           <h2 className="text-2xl font-bold text-blue-600 mb-3">Why Go Pro?</h2>
           <p className="mb-6">
-            Discover the benefits of becoming a Handy Pro below!
+            Discover the benefits of becoming a Any Task Pro below!
           </p>
           <ul className="space-y-4 text-gray-700">
             <li className="flex items-center font-semibold text-xl">

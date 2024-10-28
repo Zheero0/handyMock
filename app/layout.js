@@ -17,7 +17,7 @@ const geistMono = localFont({
 
 
 export const metadata = {
-  title: "handy",
+  title: "Any Task",
   description: "Connecting Odd Jobs and Skilled Proffesionals",
 };
 
@@ -26,7 +26,7 @@ export const metadata = {
 const footer = (
   <footer className="p-4 sm:p-8 flex justify-center mx-auto place-items-center items-center ">
     <div className="Flex flex-col  justify-center mx-auto w-full max-w-screen-xl place-content-center">
-      &copy; {new Date().getFullYear()} handy All rights reserved.
+      &copy; {new Date().getFullYear()} Any Task All rights reserved.
     </div>
   </footer>
 );

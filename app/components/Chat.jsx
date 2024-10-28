@@ -9,8 +9,8 @@ export default function Chat() {
   const router = useRouter();
 
   return (
-    <div className="p-2 pt-0 pb-2   w-full rounded-[1rem] grid grid-cols-[auto_1fr] gap-10 ">
-      <div>
+    <div className="p-2 pt-0 pb-2   w-full rounded-[1rem] grid grid-cols-[auto_1fr] gap-10  justify-center items-center">
+      <div className="p-8">
               <button
         onClick={() => {
           router.back();
@@ -22,7 +22,7 @@ export default function Chat() {
         />
       </button>
       </div>
-      <div>
+      <div className="mr-[100px]">
 
          <h1 className="text-2xl mb-4 font-bold text-blue-600">Conversations</h1>
       <ul className=" p-2">

@@ -10,7 +10,10 @@ export const metadata = {
 export default function ChatPage() {
 
 
-  return <Main>
-    <ChatAuth/>
-  </Main>;
+  return(
+    <div className="flex flex-col flex-1">
+    <ChatAuth/>   
+    </div>
+  )
+  ;
 }

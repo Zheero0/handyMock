@@ -16,7 +16,7 @@ export default function GoProPage() {
   }, [isPro, router]);
 
   return (
-    <div>
+    <div className="flex flex-1">
       {/* Render GoPro component if user is not a Pro */}
       {!isPro && <GoPro />}
     </div>

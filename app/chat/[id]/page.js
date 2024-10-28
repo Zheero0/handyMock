@@ -24,7 +24,7 @@ export default function ChatDetailPage() {
 
   if (isPro) {
     children = (
-      <div className=" grid grid-cols-[auto_2fr_1fr] gap-10 px-10">
+      <div className=" grid grid-cols-[auto_2fr_1fr] gap-10 px-10 justify-center items-center">
         <div>
           <button
             onClick={() => {
@@ -37,7 +37,7 @@ export default function ChatDetailPage() {
             />
           </button>
         </div>
-        <div className="flex flex-col p-4 max-w-full w-full bg-gradient-to-r via-blue-50 from-white to-blue-100 border-blue-600 shadow-lg hover:shadow-blue-300 rounded-2xl duration-[0.7s] flex-grow">
+        <div className="flex flex-col p-4 max-w-full h-full w-full bg-gradient-to-r via-blue-50 from-white to-blue-100 border-blue-600 shadow-lg hover:shadow-blue-300 rounded-2xl duration-[0.7s] flex-grow">
           <h2 className="font-bold text-3xl text-blue-600 w-full truncate max-w-[700px]">
             {conversation.description}
           </h2>
@@ -135,5 +135,5 @@ export default function ChatDetailPage() {
     return <div> No conversation Found</div>;
   }
 
-  return <div className="flex-1 flex flex-col items-center ">{children}</div>;
+  return <div className="flex-1 flex flex-col justify-center items-center ">{children}</div>;
 }

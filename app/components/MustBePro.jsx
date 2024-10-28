@@ -18,7 +18,7 @@ export default function MustBePro({ text }) {
         Only Pro users can <span className="text-blue-600">{text}</span>
       </h1>
       <p className="text-xl text-center mb-6">
-        Become a Handy Pro mmeber today and unlock your full potential and grow
+        Become a Any Task Pro mmeber today and unlock your full potential and grow
         your business
       </p>
 
@@ -27,7 +27,7 @@ export default function MustBePro({ text }) {
         <div className="bg-white p-6 rounded-lg shadow-md duration-200 hover:shadow-blue-400">
           <h2 className="text-2xl font-bold text-blue-600 mb-3">Why Go Pro?</h2>
           <p className="mb-6">
-            Discover the benefits of becoming a Handy Pro below!
+            Discover the benefits of becoming a Any Task Pro below!
           </p>
           <ul className="space-y-4 text-gray-700">
             <li className="flex items-center font-semibold text-xl">
