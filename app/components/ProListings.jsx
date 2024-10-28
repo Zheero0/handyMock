@@ -218,7 +218,7 @@ export default function ProListings() {
             onClick={() => {
               openModal(index);
             }}
-            className="flex rounded-xl cursor-pointer shadow-lg hover:shadow-md bg-transparent hover:shadow-blue-200 max-w-[500px] h-[150px] m-2 relative transition-transform duration-[1s] transform hover:scale-105"
+            className="flex rounded-xl cursor-pointer shadow-lg hover:shadow-md bg-transparent hover:shadow-blue-200 max-w-[600px] h-[150px] m-2 relative transition-transform duration-[1s] transform hover:scale-105"
           >
             {/* Image on the left */}
 
