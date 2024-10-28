@@ -193,7 +193,7 @@ export default function JobListings() {
                   </p>
                   <p className="font-black mb-2">
                     Rate:{" "}
-                    <span className=" font-black text-blue-500 ">
+                    <span className=" font-black text-blue-500 text-xl ">
                       {"£" + selectedJob.rate}
                     </span>
                   </p>

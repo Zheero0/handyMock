@@ -329,7 +329,7 @@ export default function ProListings() {
                   </p>
                   <p className="font-black mb-2 text-sm text-[#3a4a5b]">
                     Rate:{" "}
-                    <span className=" font-black text-blue-500 ">
+                    <span className=" font-black text-blue-500 text-xl">
                       {"£" + selectedJob.rate}
                     </span>
                   </p>
