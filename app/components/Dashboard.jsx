@@ -102,7 +102,7 @@ export default function Dashboard() {
       {/* Gray Background Section */}
       <div className="h-full rounded-2xl p-8 pt-0 ">
         <h2 className="text-2xl font-bold mb-4 text-blue-600">
-          Pro Dashboard
+        Dashboard
         </h2>
 
         {/* Active Job Applications */}
