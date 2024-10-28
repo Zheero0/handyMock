@@ -87,7 +87,7 @@ export default function JobListings() {
             onClick={() => {
               openModal(index);
             }}
-            className="rounded-xl bg-transparent shadow-lg  flex flex-col justify-between m-2 max-w-[400px] sm:max-w-[500px] md:max-w-[300px] relative transition-transform duration-[1s] transform hover:scale-105 hover:shadow-blue-400"
+            className="rounded-xl bg-transparent shadow-lg cursor-pointer flex flex-col justify-between m-2 max-w-[400px] sm:max-w-[500px] md:max-w-[300px] relative transition-transform duration-[1s] transform hover:scale-105 hover:shadow-blue-400"
           >
             {/* Image at the top */}
             <img
@@ -120,7 +120,7 @@ export default function JobListings() {
                   <CiBookmark className="w-5 h-5 text-[#3a4a5b]" />
                 </button>
               </div>
-              <p className="text leading-tight text-[#3a4a5b]">
+              <p className="text leading-tight text-[#3a4a5b] truncate pr-2 mr-5 cursor-pointer"  onClick={() => { openModal(index)} }>
                 {job.description}
               </p>
               <p className="text-[#3a4a5b]">
