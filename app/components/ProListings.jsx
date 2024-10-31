@@ -343,7 +343,7 @@ export default function ProListings() {
                       </li>
                     ))}
                   </ul>
-                  <Button text={`Contact ${selectedJob.name}`} dark font />
+                  <Button text={`Contact ${selectedJob.name}`} url={"/chat"} dark font />
                 </div>
 
                 {/* Bottom half: Map placeholder */}
