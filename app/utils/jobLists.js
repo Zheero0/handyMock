@@ -91,7 +91,7 @@ export const jobListings = [
     location: "London",
     rate: 60,
     imageUrl:
-      "https://www.manomano.co.uk/p/lcd-led-corner-tv-wall-bracket-30-32-40-47-50-55-inches-tilt-swivel-universal-uk-46270310",
+      "https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Alice Walker",
   },
   {
@@ -99,7 +99,8 @@ export const jobListings = [
     description: "Looking for someone to assemble a 3-door wardrobe.",
     location: "Manchester",
     rate: 50,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Wardrobe+Assembly",
+    imageUrl:
+      "https://images.pexels.com/photos/5705477/pexels-photo-5705477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Ryan Turner",
   },
   {
@@ -108,7 +109,7 @@ export const jobListings = [
     location: "Bristol",
     rate: 250,
     imageUrl:
-      "https://via.placeholder.com/400x300.png?text=Garden+Fence+Installation",
+      "https://images.pexels.com/photos/48246/fence-wood-fence-wood-limit-48246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Emma Johnson",
   },
   {
@@ -116,7 +117,8 @@ export const jobListings = [
     description: "Help needed to assemble flat-pack furniture from IKEA.",
     location: "Liverpool",
     rate: 40,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Furniture+Assembly",
+    imageUrl:
+      "https://images.pexels.com/photos/1797405/pexels-photo-1797405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Oliver Scott",
   },
   {
@@ -124,7 +126,8 @@ export const jobListings = [
     description: "Looking for an experienced tiler for a small bathroom.",
     location: "Edinburgh",
     rate: 450,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Bathroom+Tiling",
+    imageUrl:
+      "https://images.pexels.com/photos/5849419/pexels-photo-5849419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Sarah Edwards",
   },
   {
@@ -133,7 +136,7 @@ export const jobListings = [
     location: "Leeds",
     rate: 150,
     imageUrl:
-      "https://via.placeholder.com/400x300.png?text=Living+Room+Painting",
+      "https://images.pexels.com/photos/994164/pexels-photo-994164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "James Wilson",
   },
   {
@@ -141,7 +144,8 @@ export const jobListings = [
     description: "Looking for someone to clean gutters on a two-story house.",
     location: "Glasgow",
     rate: 70,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Gutter+Cleaning",
+    imageUrl:
+      "https://images.pexels.com/photos/5939616/pexels-photo-5939616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Daniel Thompson",
   },
   {
@@ -149,7 +153,8 @@ export const jobListings = [
     description: "Need a shed assembled in the back garden, approx 6x8 ft.",
     location: "Cardiff",
     rate: 200,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Shed+Assembly",
+    imageUrl:
+      "https://images.pexels.com/photos/3612412/pexels-photo-3612412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Megan Brown",
   },
   {
@@ -158,7 +163,7 @@ export const jobListings = [
     location: "Birmingham",
     rate: 500,
     imageUrl:
-      "https://via.placeholder.com/400x300.png?text=Kitchen+Cabinet+Installation",
+      "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Chris Evans",
   },
   {
@@ -166,7 +171,8 @@ export const jobListings = [
     description: "Need help repairing the roof of a small garden shed.",
     location: "Newcastle",
     rate: 80,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Roof+Repair",
+    imageUrl:
+      "https://images.pexels.com/photos/48895/roof-plate-tiles-brick-black-48895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Rachel Wright",
   },
   {
@@ -174,7 +180,8 @@ export const jobListings = [
     description: "Looking for a window cleaner for a 3-bedroom house.",
     location: "Brighton",
     rate: 45,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Window+Cleaning",
+    imageUrl:
+      "https://images.pexels.com/photos/6195281/pexels-photo-6195281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Tom Hardy",
   },
   {
@@ -182,7 +189,8 @@ export const jobListings = [
     description: "Need the driveway pressure washed, about 30 sq meters.",
     location: "Nottingham",
     rate: 120,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Pressure+Washing",
+    imageUrl:
+      "https://images.pexels.com/photos/3935333/pexels-photo-3935333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Jessica Ford",
   },
   {
@@ -191,7 +199,8 @@ export const jobListings = [
       "Help needed with small repairs and odd jobs around the house.",
     location: "Oxford",
     rate: 30,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Odd+Jobs",
+    imageUrl:
+      "https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Michael Lee",
   },
   {
@@ -200,7 +209,8 @@ export const jobListings = [
       "Looking for someone to paint a garden fence, about 20 panels.",
     location: "Leicester",
     rate: 180,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Fence+Painting",
+    imageUrl:
+      "https://images.pexels.com/photos/221027/pexels-photo-221027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Victoria Adams",
   },
   {
@@ -209,7 +219,7 @@ export const jobListings = [
     location: "Aberdeen",
     rate: 70,
     imageUrl:
-      "https://via.placeholder.com/400x300.png?text=Light+Fixture+Installation",
+      "https://images.pexels.com/photos/2397351/pexels-photo-2397351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Mark Roberts",
   },
   {
@@ -217,7 +227,8 @@ export const jobListings = [
     description: "Looking for someone to mow the lawn, approx 200 sq meters.",
     location: "York",
     rate: 35,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Lawn+Mowing",
+    imageUrl:
+      "https://images.pexels.com/photos/1453499/pexels-photo-1453499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Samantha Green",
   },
   {
@@ -226,7 +237,7 @@ export const jobListings = [
     location: "Cambridge",
     rate: 60,
     imageUrl:
-      "https://via.placeholder.com/400x300.png?text=Wardrobe+Moving+Assembly",
+      "https://images.pexels.com/photos/8978604/pexels-photo-8978604.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Ben Parker",
   },
   {
@@ -234,7 +245,8 @@ export const jobListings = [
     description: "Need laminate flooring installed in a 20 sq meter room.",
     location: "Bath",
     rate: 300,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Laminate+Flooring",
+    imageUrl:
+      "https://images.pexels.com/photos/3935340/pexels-photo-3935340.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Chloe Richards",
   },
   {
@@ -242,7 +254,8 @@ export const jobListings = [
     description: "Looking for help hanging heavy pictures in a hallway.",
     location: "Plymouth",
     rate: 25,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Picture+Hanging",
+    imageUrl:
+      "https://images.pexels.com/photos/5245940/pexels-photo-5245940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Paul Scott",
   },
   {
@@ -250,7 +263,8 @@ export const jobListings = [
     description: "Need someone to stain a backyard deck, approx 150 sq ft.",
     location: "Southampton",
     rate: 200,
-    imageUrl: "https://via.placeholder.com/400x300.png?text=Deck+Staining",
+    imageUrl:
+      "https://images.pexels.com/photos/449023/pexels-photo-449023.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Laura Hughes",
   },
 
