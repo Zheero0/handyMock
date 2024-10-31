@@ -28,7 +28,7 @@ const Navbar = () => {
     <header className="p-2 sm:p-6 flex items-center justify-between gap-4">
       <Link href={"/"}>
         <h1 className="relative text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 ">
-          ANY TASK
+          anytask
         </h1>
       </Link>
       <div className=" flex gap-6 ">

@@ -96,7 +96,7 @@ export default function ProListings() {
   return (
     <div className="flex flex-col flex-1 justify-center">
       <div className="text-center py-3 mb-1">
-        <h1 className="text-5xl font-bold  mb-4">
+        <h1 className="text-5xl font-medium  mb-4">
           Connect with Verified Pro Users
         </h1>
         <p className="text-lg text-gray-700 mb-1">
@@ -107,7 +107,7 @@ export default function ProListings() {
       </div>
 
       <div className="flex flex-col justify-center mx-auto text-center items-center mb-8 w-full">
-        <p className="text-2xl font-semibold mb-3">
+        <p className="text-xl font-semibold mb-3">
           Want to reach more customers and increase monthly revenue?
         </p>
         <Link
