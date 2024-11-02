@@ -9,16 +9,18 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/15748384/pexels-photo-15748384/free-photo-of-man-taking-picture-with-camera-in-mirror.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Alice Johnson",
+    postcode: "M12 6HS",
   },
   {
     id: 2,
-    title: "Nail tech by tomomorrow!!",
+    title: "Nail tech by tomorrow!!",
     description: "Looking for a nail technician for an event this weekend.",
     location: "London",
     rate: 60,
     imageUrl:
       "https://images.pexels.com/photos/15001874/pexels-photo-15001874/free-photo-of-hands-of-a-woman-with-painted-nails.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Emily Davis",
+    postcode: "W1A 1AA",
   },
   {
     id: 3,
@@ -30,21 +32,23 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/9693389/pexels-photo-9693389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Jake Smith",
+    postcode: "B1 1AA",
   },
   {
     id: 4,
     title: "PT for wedding??",
     description:
-      "Looking for a certified PT for weight loss coaching for my wedding later this year. ",
+      "Looking for a certified PT for weight loss coaching for my wedding later this year.",
     location: "Leeds",
     rate: 250,
     imageUrl:
       "https://images.pexels.com/photos/2011383/pexels-photo-2011383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Sophia Brown",
+    postcode: "LS1 4DY",
   },
   {
     id: 5,
-    title: "Web developer for portfoli site",
+    title: "Web developer for portfolio site",
     description: "Need a web developer to help build my portfolio site.",
     location: "Remote",
     rate: 600,
@@ -62,6 +66,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Isabella Miller",
+    postcode: "SW1A 1AA",
   },
   {
     id: 7,
@@ -73,6 +78,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/3612089/pexels-photo-3612089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Michael Taylor",
+    postcode: "L1 8JQ",
   },
   {
     id: 8,
@@ -84,9 +90,10 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/6197122/pexels-photo-6197122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Olivia Moore",
+    postcode: "G1 1QX",
   },
-
   {
+    id: 9,
     title: "TV Mounting",
     description: "Need help mounting a 55-inch TV on a brick wall.",
     location: "London",
@@ -94,8 +101,10 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Alice Walker",
+    postcode: "E2 0EA",
   },
   {
+    id: 10,
     title: "Wardrobe Assembly",
     description: "Looking for someone to assemble a 3-door wardrobe.",
     location: "Manchester",
@@ -103,6 +112,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/5705477/pexels-photo-5705477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Ryan Turner",
+    postcode: "M15 6AN",
   },
   {
     title: "Garden Fence Installation",
@@ -112,6 +122,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/48246/fence-wood-fence-wood-limit-48246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Emma Johnson",
+    postcode: "BS1 5UY",
   },
   {
     title: "Flat Pack Furniture Assembly",
@@ -121,6 +132,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/1797405/pexels-photo-1797405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Oliver Scott",
+    postcode: "L1 1AA",
   },
   {
     title: "Bathroom Tiling",
@@ -130,6 +142,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/5849419/pexels-photo-5849419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Sarah Edwards",
+    postcode: "EH1 1BB",
   },
   {
     title: "Painting a Living Room",
@@ -139,6 +152,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/994164/pexels-photo-994164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "James Wilson",
+    postcode: "LS1 1UR",
   },
   {
     title: "Gutter Cleaning",
@@ -148,6 +162,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/5939616/pexels-photo-5939616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Daniel Thompson",
+    postcode: "G2 1DU",
   },
   {
     title: "Shed Assembly",
@@ -157,6 +172,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/3612412/pexels-photo-3612412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Megan Brown",
+    postcode: "CF10 1DD",
   },
   {
     title: "Boiler Repair",
@@ -167,6 +183,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/9551366/pexels-photo-9551366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Harriet Walker",
+    postcode: "B1 1AA",
   },
   {
     title: "Fuse Box Replacement",
@@ -177,6 +194,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/7861963/pexels-photo-7861963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "John Mason",
+    postcode: "E1 6AN",
   },
   {
     title: "Gas Safety Inspection",
@@ -187,6 +205,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Sophia Brown",
+    postcode: "M12 6HS",
   },
   {
     title: "Electric Shower Installation",
@@ -197,6 +216,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/6920614/pexels-photo-6920614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Marcus Green",
+    postcode: "EH2 2BB",
   },
   {
     title: "Kitchen Cabinet Installation",
@@ -206,6 +226,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Chris Evans",
+    postcode: "B2 4QA",
   },
   {
     title: "Garden Shed Roof Repair",
@@ -215,6 +236,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/48895/roof-plate-tiles-brick-black-48895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Rachel Wright",
+    postcode: "NE1 5AN",
   },
   {
     title: "Window Cleaning",
@@ -224,6 +246,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/6195281/pexels-photo-6195281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Tom Hardy",
+    postcode: "BN1 1AB",
   },
   {
     title: "Driveway Pressure Washing",
@@ -233,6 +256,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/3935333/pexels-photo-3935333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Jessica Ford",
+    postcode: "NG1 1DW",
   },
   {
     title: "Handyman for Odd Jobs",
@@ -243,6 +267,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Michael Lee",
+    postcode: "OX1 1PG",
   },
   {
     title: "Fence Painting",
@@ -253,6 +278,7 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/221027/pexels-photo-221027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Victoria Adams",
+    postcode: "LE1 1RB",
   },
   {
     title: "Ceiling Light Installation",

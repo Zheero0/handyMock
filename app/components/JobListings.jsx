@@ -219,7 +219,7 @@ export default function JobListings() {
 
                 {/* Bottom half: Map placeholder */}
                 <div className="flex-1 h-60 bg-gray-200 rounded-lg mt-3">
-                  <MapComponent location={selectedJob.location} />
+                  <MapComponent location={selectedJob.postcode} />
                 </div>
               </div>
               <div className="h-[450px] relative">
