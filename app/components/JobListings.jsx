@@ -81,30 +81,34 @@ export default function JobListings() {
   return (
     <div className="flex flex-col flex-1">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      
         {currentJobs.map((job, index) => (
           <div
             key={index}
             onClick={() => {
               openModal(index);
             }}
-            className="rounded-xl bg-transparent shadow-lg cursor-pointer flex flex-col justify-between m-2 max-w-[400px] sm:max-w-[500px] md:max-w-[300px] relative transition-transform duration-[1s] transform hover:scale-105 hover:shadow-blue-200 hover:shadow-md"
+            className="rounded-xl bg-transparent shadow-lg cursor-pointer flex flex-col justify-between m-2 max-w-[400px] sm:max-w-[500px] md:max-w-[300px] relative transition-transform duration-[0.8s] transform hover:scale-[1.08] hover:shadow-blue-200 hover:shadow-md"
           >
-            {/* Image at the top */}
             <img
               src={job.imageUrl}
               alt={job.title}
-              className="w-[500px] h-[300px] md:h-[340px] object-cover rounded-t-[1.5rem]"
+              className="w-[500px] h-[300px] md:h-[340px] object-cover rounded-t-[1.5rem] mask-image"
+              style={{
+                WebkitMaskImage:
+                  "linear-gradient(to top, transparent, white 2%)",
+                maskImage: "linear-gradient(to top, transparent, white 2%)",
+              }}
             />
 
             {/* Card content */}
+
             <div className="px-2 pb-3 md:text-md relative">
               {/* Blue strip for rate */}
               <div
                 onClick={() => {
                   openModal(index);
                 }}
-                className="absolute shadow-lg top-[-320px] right-[-12px]  p-2 w-[100px] h-[50px] bg-gradient-to-r from-blue-600 via-blue-600 to-blue-400 flex items-center justify-center rounded-full duration-200 hover:scale-110 hover:cursor-pointer"
+                className="absolute shadow-lg top-[-320px] right-[-12px]  p-2 w-[100px] h-[50px] bg-gradient-to-r from-blue-600 via-blue-600 to-blue-400 flex items-center justify-center rounded-full duration-200 hover:z-[99] hover:scale-110 hover:cursor-pointer"
               >
                 <span className="text-white text-2xl font-extrabold tracking-[0.7px]">
                   {"£" + job.rate}

@@ -226,7 +226,7 @@ export default function ProListings() {
             <div className="flex-grow p-4  flex flex-col justify-center bg-gradient-to-r from-white via-white to-blue-100">
               <div>
                 <p className="text-[11px] font-black leading-[10px] text-[#3a4a5b]">
-                  ANY TASK PRO MEMBER
+                  ANYTASK PRO MEMBER
                 </p>
                 <h3 className="text-xl font-semibold text-blue-500 ">
                   {job.name}

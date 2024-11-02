@@ -23,11 +23,12 @@ export const jobListings = [
   {
     id: 3,
     title: "Dog walker for a week?",
-    description: "Need a dog walker for my pug Rosie twice a week.",
+    description:
+      "Need a dog walker for my pug Rosie twice a week for 2 weeks (2h minimum).",
     location: "Birmingham",
     rate: 40,
     imageUrl:
-      "https://images.pexels.com/photos/160846/french-bulldog-summer-smile-joy-160846.jpeg",
+      "https://images.pexels.com/photos/9693389/pexels-photo-9693389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Jake Smith",
   },
   {
