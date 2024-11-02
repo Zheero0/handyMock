@@ -81,6 +81,7 @@ export default function JobListings() {
   return (
     <div className="flex flex-col flex-1">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      
         {currentJobs.map((job, index) => (
           <div
             key={index}
@@ -120,7 +121,12 @@ export default function JobListings() {
                   <CiBookmark className="w-5 h-5 text-[#3a4a5b]" />
                 </button>
               </div>
-              <p className="text leading-tight text-[#3a4a5b] truncate pr-2 mr-5 cursor-pointer"  onClick={() => { openModal(index)} }>
+              <p
+                className="text leading-tight text-[#3a4a5b] truncate pr-2 mr-5 cursor-pointer"
+                onClick={() => {
+                  openModal(index);
+                }}
+              >
                 {job.description}
               </p>
               <p className="text-[#3a4a5b]">
@@ -128,7 +134,10 @@ export default function JobListings() {
                 {job.location}
               </p>
               <p className="font-bold text-[#3a4a5b]">
-                Rate: <span className="text-blue-500 text-xl font-extrabold ">{"£" + job.rate}</span>
+                Rate:{" "}
+                <span className="text-blue-500 text-xl font-extrabold ">
+                  {"£" + job.rate}
+                </span>
               </p>
               <button
                 onClick={() => openModal(index)}

@@ -5,7 +5,7 @@ export const jobListings = [
     description:
       "I need someone to take photos of me and my friends for my birthday.",
     location: "Manchester",
-    rate: 25,
+    rate: 150,
     imageUrl:
       "https://images.pexels.com/photos/15748384/pexels-photo-15748384/free-photo-of-man-taking-picture-with-camera-in-mirror.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Alice Johnson",
@@ -15,7 +15,7 @@ export const jobListings = [
     title: "Nail tech by tomomorrow!!",
     description: "Looking for a nail technician for an event this weekend.",
     location: "London",
-    rate: 50,
+    rate: 60,
     imageUrl:
       "https://images.pexels.com/photos/15001874/pexels-photo-15001874/free-photo-of-hands-of-a-woman-with-painted-nails.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Emily Davis",
@@ -25,7 +25,7 @@ export const jobListings = [
     title: "Dog walker for a week?",
     description: "Need a dog walker for my pug Rosie twice a week.",
     location: "Birmingham",
-    rate: 15,
+    rate: 40,
     imageUrl:
       "https://images.pexels.com/photos/160846/french-bulldog-summer-smile-joy-160846.jpeg",
     postedBy: "Jake Smith",
@@ -36,7 +36,7 @@ export const jobListings = [
     description:
       "Looking for a certified PT for weight loss coaching for my wedding later this year. ",
     location: "Leeds",
-    rate: 40,
+    rate: 250,
     imageUrl:
       "https://images.pexels.com/photos/2011383/pexels-photo-2011383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Sophia Brown",
@@ -46,7 +46,7 @@ export const jobListings = [
     title: "Web developer for portfoli site",
     description: "Need a web developer to help build my portfolio site.",
     location: "Remote",
-    rate: 60,
+    rate: 600,
     imageUrl:
       "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "James Wilson",
@@ -68,7 +68,7 @@ export const jobListings = [
     description:
       "Looking for a gardener to help with landscaping the backyard.",
     location: "Liverpool",
-    rate: 20,
+    rate: 100,
     imageUrl:
       "https://images.pexels.com/photos/3612089/pexels-photo-3612089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Michael Taylor",
@@ -79,7 +79,7 @@ export const jobListings = [
     description:
       "Need a house cleaner for weekly visits to a 3-bedroom apartment.",
     location: "Glasgow",
-    rate: 30,
+    rate: 60,
     imageUrl:
       "https://images.pexels.com/photos/6197122/pexels-photo-6197122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Olivia Moore",
@@ -89,7 +89,7 @@ export const jobListings = [
     title: "TV Mounting",
     description: "Need help mounting a 55-inch TV on a brick wall.",
     location: "London",
-    rate: 60,
+    rate: 100,
     imageUrl:
       "https://images.pexels.com/photos/1040160/pexels-photo-1040160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Alice Walker",
@@ -98,7 +98,7 @@ export const jobListings = [
     title: "Wardrobe Assembly",
     description: "Looking for someone to assemble a 3-door wardrobe.",
     location: "Manchester",
-    rate: 50,
+    rate: 75,
     imageUrl:
       "https://images.pexels.com/photos/5705477/pexels-photo-5705477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     postedBy: "Ryan Turner",
@@ -156,6 +156,46 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/3612412/pexels-photo-3612412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Megan Brown",
+  },
+  {
+    title: "Boiler Repair",
+    description:
+      "Boiler making unusual noises; needs diagnostic and repair service.",
+    location: "Birmingham",
+    rate: 250,
+    imageUrl:
+      "https://images.pexels.com/photos/9551366/pexels-photo-9551366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Harriet Walker",
+  },
+  {
+    title: "Fuse Box Replacement",
+    description:
+      "Need an electrician to replace an outdated fuse box with a new consumer unit.",
+    location: "London",
+    rate: 400,
+    imageUrl:
+      "https://images.pexels.com/photos/7861963/pexels-photo-7861963.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "John Mason",
+  },
+  {
+    title: "Gas Safety Inspection",
+    description:
+      "Require a certified gas engineer to complete a safety inspection on all home appliances.",
+    location: "Manchester",
+    rate: 150,
+    imageUrl:
+      "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Sophia Brown",
+  },
+  {
+    title: "Electric Shower Installation",
+    description:
+      "Looking for a professional to install a new electric shower in the bathroom.",
+    location: "Edinburgh",
+    rate: 220,
+    imageUrl:
+      "https://images.pexels.com/photos/6920614/pexels-photo-6920614.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Marcus Green",
   },
   {
     title: "Kitchen Cabinet Installation",
@@ -266,6 +306,176 @@ export const jobListings = [
     imageUrl:
       "https://images.pexels.com/photos/449023/pexels-photo-449023.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     postedBy: "Laura Hughes",
+  },
+  {
+    title: "Built-In Bookshelf Installation",
+    description: "Need a carpenter to build and install custom bookshelves.",
+    location: "Oxford",
+    rate: 500,
+    imageUrl:
+      "https://images.pexels.com/photos/2177482/pexels-photo-2177482.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Oliver Newton",
+  },
+  {
+    title: "Wall Mount Electric Fireplace",
+    description:
+      "Assistance needed to mount an electric fireplace to the wall.",
+    location: "Coventry",
+    rate: 120,
+    imageUrl:
+      "https://images.pexels.com/photos/27669646/pexels-photo-27669646/free-photo-of-a-wood-burning-stove-in-a-cabin.jpeg?auto=compress&cs=tinysrgb&w=800",
+    postedBy: "Rachel Green",
+  },
+  {
+    title: "Tree Trimming and Pruning",
+    description: "Experienced gardener needed to trim and prune large trees.",
+    location: "Liverpool",
+    rate: 150,
+    imageUrl:
+      "https://images.pexels.com/photos/2134798/pexels-photo-2134798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Henry White",
+  },
+  {
+    title: "Garage Door Repair",
+    description: "Need help with realigning and repairing a garage door.",
+    location: "Glasgow",
+    rate: 200,
+    imageUrl:
+      "https://images.pexels.com/photos/20522279/pexels-photo-20522279/free-photo-of-closed-roller-shutter-door.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Diana Brooks",
+  },
+  {
+    title: "Kitchen Tile Backsplash Installation",
+    description:
+      "Looking for a tiler to install a new backsplash in the kitchen.",
+    location: "Cardiff",
+    rate: 250,
+    imageUrl:
+      "https://images.pexels.com/photos/7533850/pexels-photo-7533850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Gary Patel",
+  },
+  {
+    title: "Hardwood Floor Refinishing",
+    description: "Seeking someone to refinish hardwood floors in two rooms.",
+    location: "Leicester",
+    rate: 600,
+    imageUrl:
+      "https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Isabella Turner",
+  },
+  {
+    title: "Garden Pond Setup",
+    description: "Looking for someone to install a small pond in the garden.",
+    location: "York",
+    rate: 350,
+    imageUrl:
+      "https://images.pexels.com/photos/14827455/pexels-photo-14827455.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Nathan Davies",
+  },
+  {
+    title: "Loft Insulation Installation",
+    description: "Help needed to install insulation in a loft space.",
+    location: "Swansea",
+    rate: 200,
+    imageUrl:
+      "https://images.pexels.com/photos/2459/stairs-home-loft-lifestyle.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Rebecca Smith",
+  },
+  {
+    title: "Attic Ladder Installation",
+    description: "Need an attic ladder installed for easy access to the loft.",
+    location: "Plymouth",
+    rate: 120,
+    imageUrl:
+      "https://images.pexels.com/photos/1628417/pexels-photo-1628417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Jack Peterson",
+  },
+  {
+    title: "Central Heating System Check",
+    description:
+      "Full inspection and servicing of central heating system, including radiator bleeding.",
+    location: "Leeds",
+    rate: 180,
+    imageUrl:
+      "https://images.pexels.com/photos/442151/pexels-photo-442151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Olivia Scott",
+  },
+  {
+    title: "Electrical Wiring for New Extension",
+    description:
+      "Need full electrical wiring and setup for a newly built home extension.",
+    location: "Brighton",
+    rate: 900,
+    imageUrl:
+      "https://images.pexels.com/photos/8961695/pexels-photo-8961695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Luke Harris",
+  },
+  {
+    title: "Bathroom Vanity Installation",
+    description: "Looking for someone to install a new bathroom vanity unit.",
+    location: "Newcastle",
+    rate: 150,
+    imageUrl:
+      "https://images.pexels.com/photos/7143202/pexels-photo-7143202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Emma Harris",
+  },
+  {
+    title: "House Power Washing",
+    description: "Need the exterior of a 2-story house power washed.",
+    location: "Leeds",
+    rate: 180,
+    imageUrl:
+      "https://images.pexels.com/photos/5652626/pexels-photo-5652626.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Martin Kelly",
+  },
+  {
+    title: "Dog House Construction",
+    description: "Need a sturdy dog house built for an outdoor area.",
+    location: "Blackpool",
+    rate: 100,
+    imageUrl:
+      "https://images.pexels.com/photos/5126462/pexels-photo-5126462.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Paul Adams",
+  },
+  {
+    title: "Underfloor Heating Repair",
+    description:
+      "Looking for a heating specialist to repair underfloor heating system.",
+    location: "Nottingham",
+    rate: 450,
+    imageUrl:
+      "https://images.pexels.com/photos/4458204/pexels-photo-4458204.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Grace Evans",
+  },
+  {
+    title: "Kitchen Appliance Gas Hookup",
+    description:
+      "Require installation and connection of new gas stove in the kitchen.",
+    location: "Sheffield",
+    rate: 180,
+    imageUrl:
+      "https://images.pexels.com/photos/195029/pexels-photo-195029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Oliver Wells",
+  },
+  {
+    title: "Emergency Electrical Fault Fix",
+    description:
+      "Electrician needed to fix urgent electrical fault in kitchen wiring.",
+    location: "Liverpool",
+    rate: 320,
+    imageUrl:
+      "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Hannah Moore",
+  },
+  {
+    title: "Water Heater Replacement",
+    description:
+      "Replacement of old water heater with new unit, including installation and removal of old unit.",
+    location: "Leicester",
+    rate: 600,
+    imageUrl:
+      "https://images.pexels.com/photos/8113509/pexels-photo-8113509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    postedBy: "Samuel Carter",
   },
 
   //   {
