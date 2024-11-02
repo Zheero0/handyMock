@@ -254,7 +254,7 @@ export const jobListings = [
     postedBy: "Victoria Adams",
   },
   {
-    title: "Ceiling Light Fixture Installation",
+    title: "Ceiling Light Installation",
     description: "Need a light fixture installed in the living room.",
     location: "Aberdeen",
     rate: 70,
@@ -272,7 +272,7 @@ export const jobListings = [
     postedBy: "Samantha Green",
   },
   {
-    title: "Wardrobe Moving and Assembly",
+    title: "Wardrobe Assembly",
     description: "Need a large wardrobe moved upstairs and reassembled.",
     location: "Cambridge",
     rate: 60,
@@ -345,7 +345,7 @@ export const jobListings = [
     postedBy: "Diana Brooks",
   },
   {
-    title: "Kitchen Tile Backsplash Installation",
+    title: "Kitchen Tile Installation",
     description:
       "Looking for a tiler to install a new backsplash in the kitchen.",
     location: "Cardiff",
@@ -401,7 +401,7 @@ export const jobListings = [
     postedBy: "Olivia Scott",
   },
   {
-    title: "Electrical Wiring for New Extension",
+    title: "Electrical Wiring",
     description:
       "Need full electrical wiring and setup for a newly built home extension.",
     location: "Brighton",
